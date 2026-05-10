@@ -119,6 +119,147 @@ export const seedProjects: Project[] = [
     featured: true,
   },
 
+  // ---- Cat ladders / access metalwork (Wan Lee — cat ladder + roof access) ----
+  {
+    id: 'wan-lee-cat-ladder-2024',
+    title: 'Cat ladder and roof access — Wan Lee',
+    category: 'cat-ladders-and-access-metalwork',
+    location: 'Wan Lee, Singapore',
+    year: 2024,
+    description:
+      'Cat ladder and roof access project at Wan Lee involving the construction of fixed vertical access metalwork and a roof access hatch/panel arrangement on a metal-deck roof. The project gallery shows fabrication, ladder positioning and roof-level access details, presented as site-specific cat ladder and roof access metalwork for maintenance use.',
+    image: '/assets/images/projects/proj-wan-lee-cat-ladder-2024.jpg',
+    alt: 'Wan Lee cat ladder and roof access installation',
+    gallery: [
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/01.jpg',
+        alt: 'Roof access hatch panel installed on the metal-deck roof at Wan Lee with worker visible at the opening',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/02.jpg',
+        alt: 'Looking up through the roof access opening at Wan Lee showing the cat ladder hoop cage above the hatch',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/03.jpg',
+        alt: 'Interior cat ladder at Wan Lee rising between racking to the underside of the roof access opening',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/04.jpg',
+        alt: 'Full-height view of the Wan Lee interior cat ladder with hoop cage along the climb',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/05.jpg',
+        alt: 'Roof-level view of the open access hatch at Wan Lee with worker emerging onto the metal-deck roof',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/06.jpg',
+        alt: 'Roof access hatch panel laid out on workbench during fabrication for the Wan Lee project',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/07.jpg',
+        alt: 'Workers fitting the roof access hatch frame onto the metal-deck roof at Wan Lee',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/08.jpg',
+        alt: 'Worker preparing the roof access panel on the metal-deck roof at Wan Lee with grinding and fit-up tools',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/09.jpg',
+        alt: 'Open roof access hatch on the metal-deck roof at Wan Lee with the cat ladder visible inside the opening',
+      },
+      {
+        src: '/assets/images/projects/gallery/wan-lee-cat-ladder/10.jpg',
+        alt: 'Close-up of the Wan Lee open roof access hatch showing the panel hinge, frame and ladder top below',
+      },
+    ],
+    related: [
+      { label: 'Cat ladders & access metalwork service', to: '/services/cat-ladders-and-access-metalwork' },
+      { label: '18 m cat ladder design and engineering — Singapore', to: '/blog/18m-cat-ladder-design-engineering-singapore' },
+      { label: 'Cat ladder wall embedment — engineering notes', to: '/blog/cat-ladder-wall-embedment-engineering-singapore' },
+      { label: 'SCDF cat ladder, solar and roof access notes', to: '/blog/scdf-cat-ladder-solar-roof-access-singapore' },
+      { label: 'Cat ladder material comparison — aluminium vs SS304 vs galvanised mild steel', to: '/blog/cat-ladder-aluminium-vs-ss304-vs-galvanised-mild-steel' },
+      { label: 'Wall anchors — Hilti vs Fischer and bolt sizing', to: '/blog/wall-anchors-hilti-vs-fischer-bolt-sizing-singapore' },
+      { label: 'Fischer concrete anchor comparison — Singapore', to: '/blog/fischer-concrete-anchor-comparison-singapore' },
+    ],
+  },
+
+  // ---- Outdoor trellis / structural metalwork (Frontier — mezzanine construction) ----
+  {
+    id: 'frontier-industrial-mezzanine-2024',
+    title: 'Mezzanine level construction — Frontier Industrial Building',
+    category: 'outdoor-trellis-and-structural-metalwork',
+    location: 'Frontier Industrial Building, Singapore',
+    year: 2024,
+    description:
+      'Mezzanine level construction at Frontier Industrial Building involving fabricated steel framing and installation works for an elevated working/storage platform. The project photos show frame setting-out, welding, steel member installation and site coordination, presented as custom structural metalwork subject to project requirements and relevant professional checks where required.',
+    note:
+      'Floor loading, beam sizing and any required professional endorsement are project-specific and depend on the building structure, intended use and authority requirements on each site.',
+    image: '/assets/images/projects/proj-frontier-industrial-mezzanine-2024.jpg',
+    alt: 'Frontier Industrial Building mezzanine steel frame construction',
+    gallery: [
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/01.jpg',
+        alt: 'Completed mezzanine steel frame at Frontier Industrial Building viewed from the lower floor with the elevated platform set against the existing wall',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/02.jpg',
+        alt: 'Top view of the mezzanine steel frame at Frontier Industrial Building showing the perimeter beams and intermediate joist layout',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/03.jpg',
+        alt: 'Mezzanine joists installed across the steel frame at Frontier Industrial Building before deck/floor finish',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/04.jpg',
+        alt: 'Welder fabricating mezzanine steel members at Frontier Industrial Building',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/05.jpg',
+        alt: 'Long view down the Frontier Industrial Building unit showing the mezzanine framing aligned along the side wall during installation',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/06.jpg',
+        alt: 'Worker on a ladder installing mezzanine steel members at Frontier Industrial Building',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/07.jpg',
+        alt: 'Side context view of the Frontier Industrial Building mezzanine steel frame during construction',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/08.jpg',
+        alt: 'Mezzanine framing extending into the rear bay at Frontier Industrial Building with mobile platform alongside',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/09.jpg',
+        alt: 'Underside view of the installed mezzanine framing and overhead services at Frontier Industrial Building',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/10.jpg',
+        alt: 'Edge of the mezzanine opening at Frontier Industrial Building showing the steel frame against the existing wall',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/11.jpg',
+        alt: 'Wide internal view of the Frontier Industrial Building unit showing the mezzanine steel frame in place along the side wall',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/12.jpg',
+        alt: 'Long corridor view of the Frontier Industrial Building unit during the mezzanine construction works',
+      },
+      {
+        src: '/assets/images/projects/gallery/frontier-industrial-mezzanine/13.jpg',
+        alt: 'Worker on a step ladder fitting mezzanine steel framing at Frontier Industrial Building',
+      },
+    ],
+    related: [
+      { label: 'Outdoor trellis & structural metalwork service', to: '/services/outdoor-trellis-and-structural-metalwork' },
+      { label: 'Custom metal works service', to: '/services/custom-metal-works' },
+      { label: 'Stainless steel fabrication service', to: '/services/stainless-steel-fabrication' },
+      { label: 'EN 10025 steel grades comparison — Singapore', to: '/blog/en-10025-steel-grades-comparison-singapore' },
+      { label: 'Floor loading in Singapore — BCA, SCDF, JTC notes', to: '/blog/floor-loading-singapore-bca-scdf-jtc' },
+    ],
+    featured: true,
+  },
+
   // ---- Cat ladders / access metalwork (Tuas View) ----
   {
     id: 'tuas-view-cat-ladder-2024',
