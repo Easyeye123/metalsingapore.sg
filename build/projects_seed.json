@@ -1,0 +1,170 @@
+[
+  {
+    "id": "flooring-orchid-park-parquet",
+    "title": "Parquet flooring installation",
+    "category": "flooring",
+    "location": "Orchid Park Condominium",
+    "description": "New parquet floor laid in a private residence at Orchid Park Condominium. Sub-floor levelled, planks installed and edged, then sanded and finished with a clear varnish system to suit residential use.",
+    "image": "/assets/images/proj-flooring-orchid-park-parquet.jpg",
+    "alt": "Newly installed parquet floor at Orchid Park Condominium",
+    "featured": true
+  },
+  {
+    "id": "flooring-namly-avenue",
+    "title": "Residential flooring installation",
+    "category": "flooring",
+    "location": "Namly Avenue",
+    "description": "Flooring installation in a landed home at Namly Avenue. Existing floor removed, sub-floor prepared, and replacement floor finish laid through living and bedroom spaces ahead of homeowner occupancy.",
+    "image": "/assets/images/proj-flooring-namly-avenue.jpg",
+    "alt": "Flooring installation at a Namly Avenue residence"
+  },
+  {
+    "id": "flooring-phen-geck-tiles",
+    "title": "Tile flooring installation",
+    "category": "flooring",
+    "location": "Phen Geck Avenue",
+    "description": "Tile flooring works at a Phen Geck Avenue property. Existing finish removed, screed checked and corrected where needed, then porcelain tiles laid and grouted to the homeowner specification.",
+    "image": "/assets/images/proj-flooring-phen-geck-tiles.jpg",
+    "alt": "Tile flooring installed at a Phen Geck Avenue property"
+  },
+  {
+    "id": "flooring-fisherman-church-vinyl",
+    "title": "Vinyl roll flooring",
+    "category": "flooring",
+    "location": "Fisherman of Christ Church",
+    "description": "Vinyl sheet flooring laid at a place of worship. Sub-floor cleaned and primed, vinyl roll laid with seams welded, and edges trimmed to give a continuous surface for high-traffic congregational use.",
+    "image": "/assets/images/proj-flooring-fisherman-church-vinyl.jpg",
+    "alt": "Vinyl sheet flooring at Fisherman of Christ Church",
+    "featured": true
+  },
+  {
+    "id": "flooring-vinyl-generic",
+    "title": "Vinyl plank flooring",
+    "category": "flooring",
+    "description": "Vinyl plank installation in a residential interior. Sub-floor checked for moisture and flatness; planks click-locked and trimmed at perimeters with skirting reinstated.",
+    "image": "/assets/images/proj-flooring-vinyl.jpg",
+    "alt": "Installed vinyl plank flooring in a residential interior",
+    "needsConfirmation": true
+  },
+  {
+    "id": "flooring-changi-rise-decking",
+    "title": "Outdoor decking",
+    "category": "flooring",
+    "location": "Changi Rise",
+    "description": "Outdoor decking works at Changi Rise. Existing deck assessed, defective boards replaced and deck refinished to match the homeowner brief.",
+    "image": "/assets/images/proj-flooring-changi-rise-decking.jpg",
+    "alt": "Outdoor deck installation at Changi Rise"
+  },
+  {
+    "id": "renovation-parc-olympia",
+    "title": "Condominium A&A renovation",
+    "category": "commercial-renovation",
+    "location": "Parc Olympia",
+    "description": "Internal renovation works at a Parc Olympia unit. Demolition, partition, finishes and selected M&E coordination carried out as a phased fit-out package.",
+    "image": "/assets/images/proj-renovation-parc-olympia.jpg",
+    "alt": "Renovation project at Parc Olympia",
+    "featured": true
+  },
+  {
+    "id": "renovation-longchamp-paragon",
+    "title": "Retail LED lighting works",
+    "category": "commercial-renovation",
+    "location": "Longchamp, Paragon",
+    "description": "Retail lighting works at a Paragon mall storefront. Display and ceiling lighting reworked to brand specification with coordination on mall fit-out hours.",
+    "image": "/assets/images/proj-renovation-longchamp-paragon.jpg",
+    "alt": "LED lighting works at the Longchamp store in Paragon"
+  },
+  {
+    "id": "renovation-parkway-handphone",
+    "title": "Mobile retail kiosk fit-out",
+    "category": "commercial-renovation",
+    "location": "Parkway Parade",
+    "description": "Mobile-phone retail unit fit-out at Parkway Parade. Display joinery, signage and lighting installed within mall fit-out windows.",
+    "image": "/assets/images/proj-renovation-parkway-handphone.jpg",
+    "alt": "Mobile retail unit fit-out at Parkway Parade"
+  },
+  {
+    "id": "renovation-code-bright",
+    "title": "Office fit-out",
+    "category": "commercial-renovation",
+    "description": "Commercial office fit-out — partitioning, ceiling, lighting and floor finishes installed to tenant specification.",
+    "image": "/assets/images/proj-renovation-code-bright.jpg",
+    "alt": "Commercial office fit-out interior",
+    "needsConfirmation": true
+  },
+  {
+    "id": "wah-ruby-lane",
+    "title": "Waterproofing and painting at height",
+    "category": "work-at-height",
+    "location": "Ruby Lane",
+    "description": "Waterproofing repair and external painting on an elevated facade at Ruby Lane. Sealant cut-out and renewal followed by protective coating, executed with a written work-at-height plan.",
+    "image": "/assets/images/proj-wah-ruby-lane.jpg",
+    "alt": "Waterproofing and painting works at Ruby Lane",
+    "featured": true
+  },
+  {
+    "id": "wah-parc-olympia-waterproofing",
+    "title": "Condo external waterproofing",
+    "category": "work-at-height",
+    "location": "Parc Olympia",
+    "description": "External waterproofing works at Parc Olympia condo. Vertical access used to reach defective sealant joints; cut-out, prime and renewal carried out with project-specific access arrangement.",
+    "image": "/assets/images/proj-wah-parc-olympia.jpg",
+    "alt": "External waterproofing at Parc Olympia condominium"
+  },
+  {
+    "id": "wah-waterproofing-generic",
+    "title": "Vertical waterproofing repair",
+    "category": "work-at-height",
+    "description": "Vertical waterproofing — joint cut-out, primer and sealant renewal at an external facade. Access selected to suit the site geometry; method statement reviewed before works.",
+    "image": "/assets/images/proj-wah-waterproofing.jpg",
+    "alt": "Vertical waterproofing repair on an external facade",
+    "needsConfirmation": true
+  },
+  {
+    "id": "wah-awning-pasir-panjang",
+    "title": "Awning works",
+    "category": "work-at-height",
+    "location": "Pasir Panjang",
+    "description": "External awning installation at Pasir Panjang. Frame fabrication, hoisting and fix-down to the host structure with coordination on site access during works.",
+    "image": "/assets/images/proj-wah-awning-pasir-panjang.jpg",
+    "alt": "Awning installation works at Pasir Panjang",
+    "needsConfirmation": true
+  },
+  {
+    "id": "metal-eunos-welding",
+    "title": "Metal welding works",
+    "category": "glass-and-metal",
+    "location": "Eunos",
+    "description": "On-site metal welding and fabrication works at an Eunos property. Steel members cut, welded and finished to suit the project brief, with site protection and supervision.",
+    "image": "/assets/images/proj-metal-eunos-welding.jpg",
+    "alt": "Metal welding works at an Eunos site",
+    "featured": true
+  },
+  {
+    "id": "metal-st-mary-railing",
+    "title": "Metal railing installation",
+    "category": "glass-and-metal",
+    "location": "St Mary Church",
+    "description": "Metal railing installation at a place of worship. Posts set, top rail and infill installed and finished, coordinated with congregation use and access.",
+    "image": "/assets/images/proj-metal-st-mary-railing.jpg",
+    "alt": "Metal railing installation at St Mary Church"
+  },
+  {
+    "id": "glass-skylight",
+    "title": "Skylight installation",
+    "category": "glass-and-metal",
+    "description": "Skylight framing and glazing installed over an internal court. Glass type and frame selected to suit the design loading; sealant and flashing detailed for weather-tightness.",
+    "image": "/assets/images/proj-glass-skylight.jpg",
+    "alt": "Skylight installation over an internal courtyard",
+    "needsConfirmation": true
+  },
+  {
+    "id": "glass-staircase-railing",
+    "title": "Staircase glass railing",
+    "category": "glass-and-metal",
+    "description": "Frameless glass staircase railing — tempered laminated panels set into base channel with stand-off fixings. Edge treatment and panel sizing coordinated with the consultant.",
+    "image": "/assets/images/proj-glass-staircase-railing.jpg",
+    "alt": "Frameless glass railing on an internal staircase",
+    "needsConfirmation": true
+  }
+]

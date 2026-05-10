@@ -1,0 +1,3 @@
+# Block all HTTP access to the credentials store.
+# credentials.json contains the bcrypt password hash and TOTP shared secret.
+Require all denied

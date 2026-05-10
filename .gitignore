@@ -1,0 +1,14 @@
+node_modules/
+dist/
+out/
+.env
+.env.*
+!.env.example
+build/data.json
+build/data_err.log
+*.log
+.DS_Store
+portfolio-admin/sessions/
+portfolio-admin/uploads/
+portfolio-admin/config/secrets*
+portfolio-admin/config/admin.json

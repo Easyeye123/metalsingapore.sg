@@ -1,0 +1,26 @@
+{
+  "name": "metalsingapore-sg",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MetalSingapore.sg — Singapore metal works contractor microsite (operated by Ezzogenics Pte Ltd). Custom metal works, stainless steel fabrication, gates, railings, fencing, cat ladders and structural metalwork. React/Vite SPA source plus a Python static pre-render for cPanel deployment.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "build:static": "python3 build/build_pages.py"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
