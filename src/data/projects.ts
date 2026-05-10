@@ -260,6 +260,96 @@ export const seedProjects: Project[] = [
     featured: true,
   },
 
+  // ---- Stainless steel fabrication (Jalan Penhas — SS304 residential mailboxes) ----
+  {
+    id: 'jalan-penhas-ss304-mailbox-2024',
+    title: 'SS304 mailbox installation — Jalan Penhas',
+    category: 'stainless-steel-fabrication',
+    location: 'Jalan Penhas, Singapore',
+    year: 2024,
+    description:
+      'SS304 mailbox installation at Jalan Penhas for residential use, involving fitting and alignment of a stainless steel mailbox set within the site’s wall/fixture area. The project highlights custom stainless steel fabrication, durable mailbox hardware and practical installation detailing for daily residential use.',
+    image: '/assets/images/projects/proj-jalan-penhas-ss304-mailbox-2024.jpg',
+    alt: 'SS304 mailbox installation at Jalan Penhas for residential use',
+    gallery: [
+      {
+        src: '/assets/images/projects/gallery/jalan-penhas-ss304-mailbox/01.jpg',
+        alt: 'Completed SS304 mailbox bank installed against the residential wall at Jalan Penhas with rows of letter slots and locker doors',
+      },
+      {
+        src: '/assets/images/projects/gallery/jalan-penhas-ss304-mailbox/02.jpg',
+        alt: 'Wide front view of the Jalan Penhas mailbox installation with a worker fitting a slot panel in the lower row',
+      },
+      {
+        src: '/assets/images/projects/gallery/jalan-penhas-ss304-mailbox/03.jpg',
+        alt: 'Single SS304 mailbox unit being measured during fabrication for the Jalan Penhas project',
+      },
+      {
+        src: '/assets/images/projects/gallery/jalan-penhas-ss304-mailbox/04.jpg',
+        alt: 'Angled view of the Jalan Penhas mailbox bank showing the slot row, framing trim and stainless steel door alignment',
+      },
+      {
+        src: '/assets/images/projects/gallery/jalan-penhas-ss304-mailbox/05.jpg',
+        alt: 'Low-angle close-up of the mid-section SS304 mailbox slots at Jalan Penhas showing slot opening detail and trim',
+      },
+      {
+        src: '/assets/images/projects/gallery/jalan-penhas-ss304-mailbox/06.jpg',
+        alt: 'Hand demonstrating a letter slot opening on the Jalan Penhas SS304 mailbox for scale',
+      },
+      {
+        src: '/assets/images/projects/gallery/jalan-penhas-ss304-mailbox/07.jpg',
+        alt: 'Resident operating an opened SS304 mailbox door at the Jalan Penhas installation',
+      },
+      {
+        src: '/assets/images/projects/gallery/jalan-penhas-ss304-mailbox/08.jpg',
+        alt: 'Side context view of the Jalan Penhas SS304 mailbox panel during installation with site materials in the foreground',
+      },
+    ],
+    related: [
+      { label: 'Stainless steel fabrication service', to: '/services/stainless-steel-fabrication' },
+      { label: 'Custom metal works service', to: '/services/custom-metal-works' },
+    ],
+  },
+
+  // ---- Stainless steel fabrication (Outram Road — SS304 mailbox + entrance door painting) ----
+  {
+    id: 'outram-road-ss304-mailbox-door-2024',
+    title: 'SS304 mailbox and entrance door painting — Outram Road',
+    category: 'stainless-steel-fabrication',
+    location: 'Outram Road, Singapore',
+    year: 2024,
+    description:
+      'Supply and installation of an SS304 stainless steel mailbox at Outram Road, together with painting works for the main entrance door. The project combined custom stainless steel mailbox installation with practical finishing works to refresh the entrance area for daily residential use.',
+    image: '/assets/images/projects/proj-outram-road-ss304-mailbox-door-2024.jpg',
+    alt: 'SS304 stainless steel mailbox installation and main entrance door painting at Outram Road',
+    gallery: [
+      {
+        src: '/assets/images/projects/gallery/outram-road-ss304-mailbox-door/01.jpg',
+        alt: 'SS304 stainless steel mailbox installed against the wall beside the main entrance corridor at Outram Road',
+      },
+      {
+        src: '/assets/images/projects/gallery/outram-road-ss304-mailbox-door/02.jpg',
+        alt: 'Wider front view of the Outram Road entrance area with the SS304 stainless steel mailbox unit in place',
+      },
+      {
+        src: '/assets/images/projects/gallery/outram-road-ss304-mailbox-door/03.jpg',
+        alt: 'Completed SS304 stainless steel mailbox unit wrapped for protection prior to delivery for the Outram Road project',
+      },
+      {
+        src: '/assets/images/projects/gallery/outram-road-ss304-mailbox-door/04.jpg',
+        alt: 'Painter applying paint to the entrance door surround at Outram Road with masking sheet and spray equipment in place',
+      },
+      {
+        src: '/assets/images/projects/gallery/outram-road-ss304-mailbox-door/05.jpg',
+        alt: 'Repainted main entrance door at Outram Road with the SS304 stainless steel mailbox installed alongside',
+      },
+    ],
+    related: [
+      { label: 'Stainless steel fabrication service', to: '/services/stainless-steel-fabrication' },
+      { label: 'Custom metal works service', to: '/services/custom-metal-works' },
+    ],
+  },
+
   // ---- Cat ladders / access metalwork (Tuas View) ----
   {
     id: 'tuas-view-cat-ladder-2024',
