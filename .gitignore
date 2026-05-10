@@ -12,3 +12,6 @@ portfolio-admin/sessions/
 portfolio-admin/uploads/
 portfolio-admin/config/secrets*
 portfolio-admin/config/admin.json
+
+# Working backup of original PDF-extracted project images
+assets/images/projects/originals_backup/
