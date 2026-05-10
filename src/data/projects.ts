@@ -146,6 +146,47 @@ export const seedProjects: Project[] = [
     featured: true,
   },
 
+  // ---- Metal gates (featured: Strides Premier) ----
+  {
+    id: 'strides-premier-metal-gate-2024',
+    title: 'Metal gate installation — Strides Premier',
+    category: 'metal-gates',
+    location: 'Strides Premier, Singapore',
+    year: 2024,
+    description:
+      'Metal gate project at Strides Premier — fabrication and installation of a mesh-panel metal gate for controlled access and site separation in a commercial / industrial setting. Scope covered site measurement, frame fabrication, mesh panel assembly and on-site fitting, with attention to swing/slide clearance, frame alignment and durable daily use.',
+    image: '/assets/images/projects/proj-strides-premier-metal-gate-2024.jpg',
+    alt: 'Metal gate installation at Strides Premier with mesh panel and steel frame',
+    gallery: [
+      {
+        src: '/assets/images/projects/gallery/strides-premier-metal-gate/01.jpg',
+        alt: 'Finished metal gate at Strides Premier — wide front view of the installed mesh-panel gate across the warehouse opening',
+      },
+      {
+        src: '/assets/images/projects/gallery/strides-premier-metal-gate/02.jpg',
+        alt: 'Side view of the full sliding mesh-panel metal gate at Strides Premier showing the steel frame and rolling track',
+      },
+      {
+        src: '/assets/images/projects/gallery/strides-premier-metal-gate/03.jpg',
+        alt: 'Site context during installation of the Strides Premier metal gate with the team checking alignment of the mesh panels',
+      },
+      {
+        src: '/assets/images/projects/gallery/strides-premier-metal-gate/04.jpg',
+        alt: 'Open metal gate at Strides Premier showing the welded mesh panel and steel frame detail at the leaf edge',
+      },
+      {
+        src: '/assets/images/projects/gallery/strides-premier-metal-gate/05.jpg',
+        alt: 'Mid-installation view of the Strides Premier metal gate panel offered up to the opening for fit-up',
+      },
+    ],
+    related: [
+      { label: 'Metal gates service', to: '/services/metal-gates' },
+      { label: 'Custom metal works service', to: '/services/custom-metal-works' },
+      { label: 'Fencing & grilles service', to: '/services/fencing-and-grilles' },
+    ],
+    featured: true,
+  },
+
   // ---- Metal railings / handrails ----
   {
     id: 'st-mary-church-railing-2023',
