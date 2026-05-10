@@ -48,9 +48,9 @@ export const seedProjects: Project[] = [
     location: 'Buroh Street, Singapore',
     year: 2024,
     description:
-      'Buroh Street cat ladder project involving the construction of two fixed vertical cat ladder sets up to 18 m high, each with an intermediate platform. The project included review of the building wall structure and substrate, with planning input from the Professional Engineer team and Fischer Singapore technical support on the M16 bolt grade used. Both flights carry safety hoop cages along the climb and a top cage at the upper landing.',
+      'Buroh Street cat ladder project involving the construction of two fixed vertical cat ladder sets up to 18 m high, each with an intermediate platform. The project included review of the building wall structure and substrate, with planning input from the Professional Engineer team and Fischer Singapore technical support on the M16 bolt grade used. Both flights carry safety hoop cages along the climb and a top cage at the upper landing. A later add-on extended the scope to a cat ladder for the ancillary building on the same site, providing additional fixed vertical access metalwork connected to the broader cat ladder installation.',
     note:
-      'PE coordination, the wall-substrate review and the Fischer M16 bolt-grade recommendation apply to this installation only. Anchor type, bolt size and structural sign-off are project-specific and depend on the wall, loading and exposure on each site.',
+      'PE coordination, the wall-substrate review and the Fischer M16 bolt-grade recommendation apply to this installation only. Anchor type, bolt size and structural sign-off are project-specific and depend on the wall, loading and exposure on each site. Gallery photos 9–13 show the ancillary building cat ladder add-on.',
     image: '/assets/images/projects/proj-buroh-street-cat-ladder-2024.jpg',
     alt: 'Two cat ladder sets with intermediate landing platform and safety hoop cages on the exterior of an industrial building at Buroh Street, Singapore',
     gallery: [
@@ -85,6 +85,27 @@ export const seedProjects: Project[] = [
       {
         src: '/assets/images/projects/gallery/buroh-street-cat-ladder/08.jpg',
         alt: 'Top of the upper cat ladder at Buroh Street showing the hoop cage exit and stainless-finish ladder rails at the roof landing',
+      },
+      // Ancillary building cat ladder add-on
+      {
+        src: '/assets/images/projects/gallery/buroh-street-cat-ladder-ancillary/01.jpg',
+        alt: 'Ancillary building cat ladder add-on at Buroh Street — fixed vertical access ladder mounted on the smaller building wall',
+      },
+      {
+        src: '/assets/images/projects/gallery/buroh-street-cat-ladder-ancillary/02.jpg',
+        alt: 'Side view of the ancillary building cat ladder add-on at Buroh Street showing wall-mounting brackets and rung spacing',
+      },
+      {
+        src: '/assets/images/projects/gallery/buroh-street-cat-ladder-ancillary/03.jpg',
+        alt: 'Ancillary building cat ladder add-on at Buroh Street with hoop cage detail and top mounting against the parapet',
+      },
+      {
+        src: '/assets/images/projects/gallery/buroh-street-cat-ladder-ancillary/04.jpg',
+        alt: 'Lower section and base anchorage of the Buroh Street ancillary building cat ladder add-on',
+      },
+      {
+        src: '/assets/images/projects/gallery/buroh-street-cat-ladder-ancillary/05.jpg',
+        alt: 'Completed ancillary building cat ladder add-on at Buroh Street viewed from the yard, alongside the main cat ladder installation',
       },
     ],
     related: [
@@ -142,6 +163,104 @@ export const seedProjects: Project[] = [
       { label: 'Cat ladder design and engineering (18m)', to: '/blog/18m-cat-ladder-design-engineering-singapore' },
       { label: 'SCDF cat ladder solar / roof access notes', to: '/blog/scdf-cat-ladder-solar-roof-access-singapore' },
       { label: 'Cat ladder material comparison', to: '/blog/cat-ladder-aluminium-vs-ss304-vs-galvanised-mild-steel' },
+    ],
+    featured: true,
+  },
+
+  // ---- Cat ladders / access metalwork (Ng Teng Fong Hospital — M&E ancillary) ----
+  {
+    id: 'ng-teng-fong-hospital-cat-ladder-2024',
+    title: 'Cat ladder — Ng Teng Fong Hospital M&E ancillary building',
+    category: 'cat-ladders-and-access-metalwork',
+    location: 'Ng Teng Fong Hospital, Singapore',
+    year: 2024,
+    description:
+      'Cat ladder project for the M&E ancillary building at Ng Teng Fong Hospital, involving fixed vertical access metalwork for maintenance access. The project gallery shows installation and completed ladder details, with the scope presented as site-specific cat ladder and access metalwork.',
+    image: '/assets/images/projects/proj-ng-teng-fong-hospital-cat-ladder-2024.jpg',
+    alt: 'Ng Teng Fong Hospital M&E ancillary building cat ladder installation',
+    gallery: [
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/01.jpg',
+        alt: 'Completed cat ladder on the M&E ancillary building at Ng Teng Fong Hospital — front elevation showing the full vertical access run',
+      },
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/02.jpg',
+        alt: 'Side context view of the Ng Teng Fong Hospital M&E ancillary cat ladder against the building facade',
+      },
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/03.jpg',
+        alt: 'Mid-section detail of the Ng Teng Fong Hospital cat ladder showing the rungs and wall-fixing brackets',
+      },
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/04.jpg',
+        alt: 'Top landing and exit detail of the M&E ancillary cat ladder at Ng Teng Fong Hospital',
+      },
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/05.jpg',
+        alt: 'Lower section and base anchorage of the Ng Teng Fong Hospital M&E ancillary cat ladder',
+      },
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/06.jpg',
+        alt: 'Cat ladder rungs and stringer detail at Ng Teng Fong Hospital M&E ancillary building',
+      },
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/07.jpg',
+        alt: 'Wall-fixing bracket and anchor detail on the Ng Teng Fong Hospital M&E cat ladder',
+      },
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/08.jpg',
+        alt: 'On-site installation view of the Ng Teng Fong Hospital M&E ancillary cat ladder',
+      },
+      {
+        src: '/assets/images/projects/gallery/ng-teng-fong-hospital-cat-ladder/09.jpg',
+        alt: 'Finished cat ladder with surrounding M&E ancillary building works at Ng Teng Fong Hospital',
+      },
+    ],
+    related: [
+      { label: 'Cat ladders & access metalwork service', to: '/services/cat-ladders-and-access-metalwork' },
+      { label: '18 m cat ladder design and engineering — Singapore', to: '/blog/18m-cat-ladder-design-engineering-singapore' },
+      { label: 'Cat ladder wall embedment — engineering notes', to: '/blog/cat-ladder-wall-embedment-engineering-singapore' },
+      { label: 'Cat ladder material comparison — aluminium vs SS304 vs galvanised mild steel', to: '/blog/cat-ladder-aluminium-vs-ss304-vs-galvanised-mild-steel' },
+      { label: 'SCDF cat ladder, solar and roof access notes', to: '/blog/scdf-cat-ladder-solar-roof-access-singapore' },
+    ],
+  },
+
+  // ---- Stainless steel fabrication (Rainbow Centre bollards) ----
+  {
+    id: 'rainbow-centre-stainless-bollards-2024',
+    title: 'Stainless steel bollard installation — Rainbow Centre',
+    category: 'stainless-steel-fabrication',
+    location: 'Rainbow Centre, Singapore',
+    year: 2024,
+    description:
+      'Stainless steel bollard installation at Rainbow Centre for durable access control and pedestrian/vehicle separation. The project involved site fitting, alignment and installation of stainless steel bollards suited for daily facility use, with practical attention to spacing, finished appearance and long-term corrosion resistance.',
+    image: '/assets/images/projects/proj-rainbow-centre-stainless-bollards-2024.jpg',
+    alt: 'Stainless steel bollard installation at Rainbow Centre',
+    gallery: [
+      {
+        src: '/assets/images/projects/gallery/rainbow-centre-stainless-bollards/01.jpg',
+        alt: 'Completed line of stainless steel bollards at Rainbow Centre defining the pedestrian/vehicle boundary at the facility entrance',
+      },
+      {
+        src: '/assets/images/projects/gallery/rainbow-centre-stainless-bollards/02.jpg',
+        alt: 'Close-up of an installed stainless steel bollard at Rainbow Centre showing the polished finish and base fixing',
+      },
+      {
+        src: '/assets/images/projects/gallery/rainbow-centre-stainless-bollards/03.jpg',
+        alt: 'Detail of stainless steel bollard alignment and spacing at Rainbow Centre',
+      },
+      {
+        src: '/assets/images/projects/gallery/rainbow-centre-stainless-bollards/04.jpg',
+        alt: 'Wider context view of the stainless steel bollard run at Rainbow Centre',
+      },
+      {
+        src: '/assets/images/projects/gallery/rainbow-centre-stainless-bollards/05.jpg',
+        alt: 'On-site fitting and installation view of stainless steel bollards at Rainbow Centre',
+      },
+    ],
+    related: [
+      { label: 'Stainless steel fabrication service', to: '/services/stainless-steel-fabrication' },
+      { label: 'Custom metal works service', to: '/services/custom-metal-works' },
     ],
     featured: true,
   },
