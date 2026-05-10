@@ -318,6 +318,8 @@ The Singapore market has settled on a comfortable equilibrium where Hilti is the
 
 A cat ladder fails at the anchor, not at the rung. Specify the anchor for the substrate, not for the ladder. Match the bolt grade to the ladder metal. Drill to the embedment the ETA requires. Pull-test under BS 8539. Then sleep at night.
 
+For a focused, family-by-family comparison of the four fischer chemical and mechanical anchor systems referenced above, see [fischer Bolt Anchor Systems Compared: FIS EM Plus vs FIS V Plus vs FAZ II Plus vs FBN II](/blog/fischer-concrete-anchor-comparison-singapore/).
+
 ---
 
 *Sources*

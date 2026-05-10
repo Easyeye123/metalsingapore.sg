@@ -181,6 +181,25 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 14,
   },
   {
+    slug: "fischer-concrete-anchor-comparison-singapore",
+    title:
+      "fischer Bolt Anchor Systems Compared: FIS EM Plus vs FIS V Plus vs FAZ II Plus vs FBN II — Which Concrete Anchor Should You Specify?",
+    metaTitle:
+      "fischer Concrete Anchor Comparison Guide",
+    metaDescription:
+      "Compare fischer FIS EM Plus, FIS V Plus, FAZ II Plus and FBN II anchors for concrete fixing, cat ladders and access metalwork.",
+    excerpt:
+      "Side-by-side comparison of four fischer concrete anchor systems — pure epoxy, vinyl ester hybrid, high-performance through-bolt and standard wedge — with ETA references, seismic ratings, base materials and where each fits on Singapore cat ladder, handrail and access-metalwork packages.",
+    categories: [
+      "cat-ladders-and-access-metalwork",
+      "custom-metal-works",
+      "stainless-steel-fabrication",
+    ],
+    baseFile: "Blog_Fischer_Concrete_Anchor_Comparison",
+    publishedISO: "2026-05-10",
+    readingMinutes: 13,
+  },
+  {
     slug: "top-5-metal-gate-designs-singapore",
     title:
       "Top 5 metal gate designs for Singapore homes and developments",

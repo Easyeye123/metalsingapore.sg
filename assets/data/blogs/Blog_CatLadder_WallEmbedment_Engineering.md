@@ -251,3 +251,5 @@ Spec the right anchor, in the right wall, installed the right way, and verify wi
 ---
 
 *References cited inline. The next blog in this series compares Hilti and Fischer anchor systems against generic / unbranded alternatives, with pricing and risk analysis.*
+
+*Related — for a deeper look at the four fischer concrete anchor systems (FIS EM Plus, FIS V Plus, FAZ II Plus, FBN II), see [fischer Bolt Anchor Systems Compared](/blog/fischer-concrete-anchor-comparison-singapore/).*
