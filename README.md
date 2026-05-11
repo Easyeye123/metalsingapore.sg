@@ -7,6 +7,13 @@ metalwork. The cPanel-deployable artefact is a pre-rendered static HTML
 bundle; the React/Vite SPA under `/src` is the maintainable mirror used for
 development and code review.
 
+> **Deploying to cPanel?** Do **not** upload this repo or
+> `metalsingapore_sg_source.zip` — they contain TypeScript source that
+> Apache can't run, which is what causes the "Failed to load module
+> script: MIME type application/octet-stream … main.tsx" error in the
+> browser. Upload `metalsingapore_sg_cpanel_deploy.zip` instead. See
+> [DEPLOYMENT.md](./DEPLOYMENT.md) for the full rationale and steps.
+
 ## Quick preview (after extracting the ZIP)
 
 You need Node.js 18+ and npm. From the extracted folder:
@@ -55,6 +62,7 @@ dist/                      Vite build output (source review only, gitignored)
 | `npm run preview` | Serve the built `./dist` on <http://localhost:4173> |
 | `npm run typecheck` | `tsc --noEmit` over `/src` and `vite.config.ts` |
 | `npm run build:static` | `python3 build/site.py` — renders the cPanel bundle to `./out` |
+| `npm run build:deploy` | Regenerate `./out` and write `metalsingapore_sg_cpanel_deploy.zip` |
 | `npm run qa` | `python3 build/qa_check.py` — title/meta/JSON-LD/banned-string scan |
 
 The Python build is the deployable artefact; the Vite SPA is for source
@@ -78,17 +86,29 @@ review and dev preview only.
 
 ## Deploy to cPanel
 
-1. `npm run build:static` — writes the static site to `./out`.
-2. Upload **the contents of `out/`** plus the `portfolio-admin/` directory
-   into `public_html/` on the cPanel host.
-3. Upload `server/contact-submit.php` to `public_html/contact-submit.php`.
-4. Visit `https://metalsingapore.sg/portfolio-admin/setup.php` to set the
-   admin passcode and Google Authenticator (TOTP) secret. The credentials
-   file is written to `portfolio-admin/config/credentials.json` with mode
-   0600 — never commit it.
-5. Confirm the contact details in `src/data/site.ts` (and the `SITE`
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for the full walkthrough. Short
+version:
+
+1. `npm run build:deploy` — produces
+   `metalsingapore_sg_cpanel_deploy.zip` (regenerates `./out`, then
+   zips its contents flat).
+2. In cPanel File Manager, upload that ZIP into `public_html/` and
+   **extract in place**. Files like `index.html`, `assets/`,
+   `portfolio-admin/`, `contact-submit.php`, `.htaccess` land directly
+   in `public_html/`.
+3. First deploy only: visit
+   `https://metalsingapore.sg/portfolio-admin/setup.php` to set the
+   admin passcode and Google Authenticator (TOTP) secret. The
+   credentials file is written to
+   `portfolio-admin/config/credentials.json` with mode 0600 — never
+   commit it.
+4. Confirm the contact details in `src/data/site.ts` (and the `SITE`
    constants in `build/site.py`) match the production phone, email and
    physical address before going live.
+
+Never upload the source ZIP or this repo directly — they contain
+`index.html` with `<script type="module" src="/src/main.tsx">`, which
+Apache cannot serve.
 
 ## SEO highlights
 
