@@ -540,14 +540,14 @@ export const seedProjects: Project[] = [
   // ---- Metal railings / handrails ----
   {
     id: 'st-mary-church-railing-2023',
-    title: 'Railing installation — St Mary Church',
+    title: 'Railing installation — Fisherman\'s Church',
     category: 'metal-railings',
-    location: 'St Mary Church, Singapore',
+    location: 'Fisherman\'s Church, Singapore',
     year: 2023,
     description:
-      'Railing installation at St Mary Church providing a durable, functional safety barrier that complements the architectural setting of the property.',
+      'Railing installation at Fisherman\'s Church providing a durable, functional safety barrier that complements the architectural setting of the property.',
     image: '/assets/images/projects/proj-st-mary-church-railing-2023.jpg',
-    alt: 'Timber-finished metal railing installation at St Mary Church, Singapore',
+    alt: 'Timber-finished metal railing installation at Fisherman\'s Church, Singapore',
     featured: true,
   },
   {
@@ -614,18 +614,6 @@ export const seedProjects: Project[] = [
 
   // ---- Custom metal works ----
   {
-    id: 'lorong-23-geylang-locker-2024',
-    title: 'Custom locker fabrication — 1 Lorong 23 Geylang',
-    category: 'custom-metal-works',
-    location: '1 Lorong 23 Geylang, Singapore',
-    year: 2024,
-    description:
-      'Custom locker supply and installation at 1 Lorong 23 Geylang — powder-coated mild-steel cabinet panels with hinges and lock detail coordinated to the client\'s storage layout.',
-    image: '/assets/images/projects/proj-lorong-23-geylang-locker-2024.jpg',
-    alt: 'Bank of custom mild-steel lockers at 1 Lorong 23 Geylang',
-    featured: true,
-  },
-  {
     id: 'arthur-118-metal-bed-2021',
     title: 'Metal bed fabrication — Arthur 118',
     category: 'custom-metal-works',
@@ -635,17 +623,6 @@ export const seedProjects: Project[] = [
       'Fabrication and installation of metal beds at Arthur 118 — sturdy, space-efficient bed frames built to match the room layouts and the client\'s use case.',
     image: '/assets/images/projects/proj-arthur-118-metal-bed-2021.jpg',
     alt: 'Metal bed frames installed at Arthur 118 dormitory rooms',
-  },
-  {
-    id: 'parkway-parade-metal-2023',
-    title: 'Custom metal works — Parkway Parade',
-    category: 'custom-metal-works',
-    location: 'Parkway Parade, Singapore',
-    year: 2023,
-    description:
-      'Custom metal fabrication and installation at Parkway Parade — components fabricated to suit the site requirements and integrated with surrounding interior works.',
-    image: '/assets/images/projects/proj-parkway-parade-metal-2023.jpg',
-    alt: 'Custom metal fabrication work at Parkway Parade',
   },
   {
     id: 'grey-lane-metal-works-2022',
@@ -672,66 +649,4 @@ export const seedProjects: Project[] = [
     alt: 'Collapsible metal gate installed at a Singapore property entrance',
   },
 
-  // ---- Outdoor trellis / structural ----
-  {
-    id: 'outdoor-trellis-2024',
-    title: 'Outdoor trellis fabrication and installation',
-    category: 'outdoor-trellis-and-structural-metalwork',
-    location: 'TR 6 University Road, Singapore',
-    year: 2024,
-    description:
-      'Fabrication and installation of an outdoor trellis at TR 6 University Road — a functional and decorative metal structure detailed to the architect\'s drawings and finished for outdoor exposure.',
-    image: '/assets/images/projects/proj-outdoor-trellis-2024.jpg',
-    alt: 'Outdoor metal trellis at TR 6 University Road, Singapore',
-    featured: true,
-  },
-  {
-    id: 'park-east-condo-frame-2019',
-    title: 'Metal frame installation — Park East Condo',
-    category: 'outdoor-trellis-and-structural-metalwork',
-    location: 'Park East Condo, Singapore',
-    year: 2019,
-    description:
-      'Metal frame installation at Park East Condo supporting structural and access requirements with fabricated metal components — before-and-after sequence captured on site.',
-    image: '/assets/images/projects/proj-park-east-condo-frame-2019.jpg',
-    alt: 'Replacement metal frame at Park East Condo, before and after',
-  },
-
-  // ---- Cat ladders / access metalwork (ramps) ----
-  {
-    id: 'supply-fabricate-ramp-2022',
-    title: 'Supply and fabrication of metal ramp',
-    category: 'cat-ladders-and-access-metalwork',
-    location: 'Singapore',
-    year: 2022,
-    description:
-      'Supply and fabrication of a metal access ramp — durable substrate, anti-slip top finish and side handrails detailed for the slope and landing geometry on site.',
-    image: '/assets/images/projects/proj-supply-fabricate-ramp-2022.jpg',
-    alt: 'White metal access ramp with side handrails',
-    featured: true,
-  },
-  {
-    id: 'buroh-lane-ramp-repair-2023',
-    title: 'Ramp repair — 7 Buroh Lane',
-    category: 'cat-ladders-and-access-metalwork',
-    location: '7 Buroh Lane, Singapore',
-    year: 2023,
-    description:
-      'Ramp repair at 7 Buroh Lane — restoration of access using durable replacement metal components, repair welding and protective finish, returning the ramp to working condition.',
-    image: '/assets/images/projects/proj-buroh-lane-ramp-repair-2023.jpg',
-    alt: 'Ramp repair work at 7 Buroh Lane',
-  },
-
-  // ---- Aluminium frame / glass door ----
-  {
-    id: 'aluminium-glass-door-2019',
-    title: 'Aluminium frame glass door installation',
-    category: 'custom-metal-works',
-    location: 'Singapore',
-    year: 2019,
-    description:
-      'Aluminium frame glass door installation — a durable, functional entry solution with a clean finished appearance, sized and fitted to suit the existing opening.',
-    image: '/assets/images/projects/proj-aluminium-glass-door-2019.jpg',
-    alt: 'Aluminium frame glass door installation in Singapore',
-  },
 ];
