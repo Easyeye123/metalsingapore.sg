@@ -58,7 +58,7 @@ export default function Home() {
         jsonLd={localBusiness}
       />
 
-      {/* HERO — navy gradient, orange eyebrow with bullets, dual CTA */}
+      {/* HERO — dark forest green gradient, blueprint technical card, orange CTA */}
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
@@ -87,14 +87,14 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-media">
-            <img
-              src="/assets/images/hero-metalsingapore.jpg"
-              alt="Metal works contractor in Singapore — fabricated steel railing, gate and access metalwork"
-              width={720}
-              height={540}
-              loading="eager"
-              decoding="async"
-            />
+            <div
+              className="hero-card"
+              role="img"
+              aria-label="MetalSingapore.sg — custom metal works in Singapore"
+            >
+              <p className="hero-card-eyebrow">MetalSingapore.sg</p>
+              <p className="hero-card-title">Custom metal works in Singapore</p>
+            </div>
           </div>
         </div>
       </section>

@@ -118,7 +118,7 @@ def head_block(*, title: str, description: str, canonical_path: str,
 <meta name="description" content="{esc(description)}" />
 <link rel="canonical" href="{esc(cu)}" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
-<meta name="theme-color" content="#0f1419" />
+<meta name="theme-color" content="#0E2E22" />
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/metalsg-favicon.png" />
 <link rel="icon" type="image/png" sizes="128x128" href="/assets/images/metalsg-icon-128.png" />
 <link rel="apple-touch-icon" href="/assets/images/metalsg-icon.png" />
@@ -356,7 +356,10 @@ def home_page() -> str:
       </ul>
     </div>
     <div class="hero-art">
-      <img src="/assets/images/hero-metalsingapore.jpg" alt="MetalSingapore custom metal works in Singapore" width="720" height="540" />
+      <div class="hero-card" role="img" aria-label="MetalSingapore.sg — custom metal works in Singapore">
+        <p class="hero-card-eyebrow">MetalSingapore.sg</p>
+        <p class="hero-card-title">Custom metal works in Singapore</p>
+      </div>
     </div>
   </div>
 </section>
