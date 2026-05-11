@@ -66,6 +66,12 @@ ul li, ol li { margin-bottom: 0.35em; }
 
 .container { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
 
+/* Slightly wider gutters on phones so text doesn't hug the viewport edge.
+   Targets ~22-24px of breathing room on common phone widths while
+   leaving desktop proportions unchanged. */
+@media (max-width: 640px) { .container { padding: 0 1.4rem; } }
+@media (max-width: 420px) { .container { padding: 0 1.5rem; } }
+
 .eyebrow {
   display: inline-block;
   font-family: 'Satoshi', sans-serif;
@@ -99,6 +105,8 @@ ul li, ol li { margin-bottom: 0.35em; }
   display: flex; align-items: center; justify-content: space-between;
   gap: 1.5rem; padding: 0.85rem 1.25rem;
 }
+@media (max-width: 640px) { .nav-row { padding: 0.85rem 1.4rem; } }
+@media (max-width: 420px) { .nav-row { padding: 0.85rem 1.5rem; } }
 .brand { display: flex; align-items: center; gap: 0.7rem; color: var(--ink); }
 .brand:hover { text-decoration: none; }
 .brand-mark {
@@ -154,7 +162,7 @@ ul li, ol li { margin-bottom: 0.35em; }
     position: absolute; left: 0; right: 0; top: 100%;
     flex-direction: column; align-items: stretch; gap: 0;
     background: var(--surface); border-bottom: 1px solid var(--line);
-    padding: 0.5rem 1.25rem; display: none;
+    padding: 0.5rem 1.4rem; display: none;
   }
   .primary-nav.is-open { display: flex; }
   .primary-nav a { padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
