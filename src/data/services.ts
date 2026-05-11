@@ -75,7 +75,7 @@ export const services: Service[] = [
           'Where the metalwork forms part of a larger fit-out or A&A renovation, we coordinate with carpentry, glass, electrical and waterproofing trades through the main contractor or ID firm.',
       },
     ],
-    cover: '/assets/images/cat-custom-metal-works.jpg',
+    cover: '/assets/images/projects/proj-arthur-118-metal-bed-2021.jpg',
   },
   {
     slug: 'stainless-steel-fabrication',
@@ -128,7 +128,7 @@ export const services: Service[] = [
           'Frameless glass balustrades use clamp or channel fixings; semi-frameless designs use stainless top rails with glass panels. Glass thickness, post spacing and fixing capacity should be verified against the design loading by the project Professional Engineer.',
       },
     ],
-    cover: '/assets/images/cat-stainless-steel-fabrication.jpg',
+    cover: '/assets/images/projects/proj-rainbow-centre-stainless-bollards-2024.jpg',
   },
   {
     slug: 'metal-gates',
@@ -184,7 +184,7 @@ export const services: Service[] = [
           'Mild-steel gates outdoors should be hot-dip galvanised or zinc-primed before topcoat. Stainless gates are usually SS304 brushed for general use and SS316 if coastal exposure is expected.',
       },
     ],
-    cover: '/assets/images/cat-metal-gates.jpg',
+    cover: '/assets/images/projects/proj-strides-premier-metal-gate-2024.jpg',
   },
   {
     slug: 'metal-railings',
@@ -238,7 +238,7 @@ export const services: Service[] = [
           'Surface-mount base plates with mechanical anchors are fastest to install but transmit higher tensile load to the slab edge. Side-mount fascia brackets keep the slab edge clear but rely on the slab face strength. Choice should match the slab condition and the design loading.',
       },
     ],
-    cover: '/assets/images/cat-metal-railings.jpg',
+    cover: '/assets/images/projects/proj-st-mary-church-railing-2023.jpg',
   },
   {
     slug: 'fencing-and-grilles',
@@ -291,7 +291,7 @@ export const services: Service[] = [
           'Fixed grilles are simple and rigid; openable / lockable grilles allow emergency exit. SCDF and BCA requirements for habitable rooms and bedrooms should be verified by the appointed qualified person.',
       },
     ],
-    cover: '/assets/images/cat-fencing-and-grilles.jpg',
+    cover: '/assets/images/projects/proj-grey-lane-metal-works-2022.jpg',
   },
   {
     slug: 'cat-ladders-and-access-metalwork',
@@ -346,7 +346,7 @@ export const services: Service[] = [
           'Both Hilti and Fischer publish ETA-approved chemical and mechanical anchors with full design data for cracked and uncracked concrete. Anchor capacity is substrate-driven, not load-driven — the substrate type and crack state should be assessed before bolt selection.',
       },
     ],
-    cover: '/assets/images/cat-cat-ladders-and-access-metalwork.jpg',
+    cover: '/assets/images/projects/proj-wan-lee-cat-ladder-2024.jpg',
   },
   {
     slug: 'outdoor-trellis-and-structural-metalwork',
@@ -399,7 +399,7 @@ export const services: Service[] = [
           'Architectural steel that remains exposed in service should be detailed for cleanability and corrosion control — radiused outside corners, drainage holes in tubular sections, stainless fasteners where galvanic corrosion is a risk.',
       },
     ],
-    cover: '/assets/images/cat-outdoor-trellis-and-structural-metalwork.jpg',
+    cover: '/assets/images/projects/proj-outdoor-trellis-2024.jpg',
   },
 ];
 

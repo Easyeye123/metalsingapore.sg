@@ -78,6 +78,40 @@ FAQS = D["faqs"]
 
 SERVICES_BY_SLUG = {s["slug"]: s for s in SERVICES}
 
+# Cover image per service card on the home page — sourced from real project
+# photos so the rectangles show actual metalwork rather than placeholder cards.
+# Keep aligned with src/pages/Home.tsx SERVICE_CARD_IMAGES.
+HOME_SERVICE_CARD_IMAGES = {
+    "custom-metal-works": {
+        "src": "/assets/images/projects/proj-arthur-118-metal-bed-2021.jpg",
+        "alt": "Custom fabricated metal bed frame for an Arthur Road residence, Singapore",
+    },
+    "stainless-steel-fabrication": {
+        "src": "/assets/images/projects/proj-rainbow-centre-stainless-bollards-2024.jpg",
+        "alt": "Stainless steel SS304 bollards installed at Rainbow Centre, Singapore",
+    },
+    "metal-gates": {
+        "src": "/assets/images/projects/proj-strides-premier-metal-gate-2024.jpg",
+        "alt": "Metal gate installation at Strides Premier, Singapore",
+    },
+    "metal-railings": {
+        "src": "/assets/images/projects/proj-st-mary-church-railing-2023.jpg",
+        "alt": "Metal railing installation at Fisherman's Church, Singapore",
+    },
+    "fencing-and-grilles": {
+        "src": "/assets/images/projects/proj-grey-lane-metal-works-2022.jpg",
+        "alt": "Window grille and metal railing at Grey Lane, Singapore",
+    },
+    "cat-ladders-and-access-metalwork": {
+        "src": "/assets/images/projects/proj-wan-lee-cat-ladder-2024.jpg",
+        "alt": "Cat ladder and roof access metalwork at Wan Lee, Singapore",
+    },
+    "outdoor-trellis-and-structural-metalwork": {
+        "src": "/assets/images/projects/proj-outdoor-trellis-2024.jpg",
+        "alt": "Outdoor metal trellis fabricated and installed in Singapore",
+    },
+}
+
 
 # --- HTML helpers -----------------------------------------------------------
 
@@ -286,7 +320,7 @@ def home_page() -> str:
     services_grid = "\n".join(
         f'''
       <a class="service-card" href="/services/{esc(slug)}/">
-        <div class="service-card-image" style="background-image:url('{esc(CATEGORIES[slug]["cover"])}')"></div>
+        <div class="service-card-image" style="background-image:url('{esc(HOME_SERVICE_CARD_IMAGES[slug]["src"])}')" role="img" aria-label="{esc(HOME_SERVICE_CARD_IMAGES[slug]["alt"])}"></div>
         <div class="service-card-body">
           <h3>{esc(CATEGORIES[slug]["title"])}</h3>
           <p>{esc(CATEGORIES[slug]["short"])}</p>
@@ -356,9 +390,10 @@ def home_page() -> str:
       </ul>
     </div>
     <div class="hero-art">
-      <div class="hero-card" role="img" aria-label="MetalSingapore.sg — custom metal works in Singapore">
-        <p class="hero-card-eyebrow">MetalSingapore.sg</p>
-        <p class="hero-card-title">Custom metal works in Singapore</p>
+      <div class="hero-media">
+        <img src="/assets/images/projects/proj-frontier-industrial-mezzanine-2024.jpg"
+             alt="Structural steel mezzanine fabrication at Frontier Industrial Building, Singapore"
+             width="1200" height="900" loading="eager" decoding="async" fetchpriority="high" />
       </div>
     </div>
   </div>

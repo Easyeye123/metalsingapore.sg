@@ -2,10 +2,46 @@ import { Link } from 'react-router-dom';
 import RouteHead from '../components/RouteHead';
 import CtaBlock from '../components/CtaBlock';
 import ProjectCard from '../components/ProjectCard';
-import { SITE, CATEGORIES, SPOKES } from '../data/site';
+import { SITE, CATEGORIES, SPOKES, type CategorySlug } from '../data/site';
 import { services } from '../data/services';
 import { useProjects } from '../hooks/useProjects';
 import { blogPosts } from '../data/blog';
+
+/**
+ * Cover image per service card on the home page. Sourced from the existing
+ * project portfolio so the rectangles show real metal works rather than
+ * placeholder cards.
+ */
+const SERVICE_CARD_IMAGES: Record<CategorySlug, { src: string; alt: string }> = {
+  'custom-metal-works': {
+    src: '/assets/images/projects/proj-arthur-118-metal-bed-2021.jpg',
+    alt: 'Custom fabricated metal bed frame for an Arthur Road residence, Singapore',
+  },
+  'stainless-steel-fabrication': {
+    src: '/assets/images/projects/proj-rainbow-centre-stainless-bollards-2024.jpg',
+    alt: 'Stainless steel SS304 bollards installed at Rainbow Centre, Singapore',
+  },
+  'metal-gates': {
+    src: '/assets/images/projects/proj-strides-premier-metal-gate-2024.jpg',
+    alt: 'Metal gate installation at Strides Premier, Singapore',
+  },
+  'metal-railings': {
+    src: '/assets/images/projects/proj-st-mary-church-railing-2023.jpg',
+    alt: "Metal railing installation at Fisherman's Church, Singapore",
+  },
+  'fencing-and-grilles': {
+    src: '/assets/images/projects/proj-grey-lane-metal-works-2022.jpg',
+    alt: 'Window grille and metal railing at Grey Lane, Singapore',
+  },
+  'cat-ladders-and-access-metalwork': {
+    src: '/assets/images/projects/proj-wan-lee-cat-ladder-2024.jpg',
+    alt: 'Cat ladder and roof access metalwork at Wan Lee, Singapore',
+  },
+  'outdoor-trellis-and-structural-metalwork': {
+    src: '/assets/images/projects/proj-outdoor-trellis-2024.jpg',
+    alt: 'Outdoor metal trellis fabricated and installed in Singapore',
+  },
+};
 
 export default function Home() {
   const { projects } = useProjects();
@@ -87,14 +123,15 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-media">
-            <div
-              className="hero-card"
-              role="img"
-              aria-label="MetalSingapore.sg — custom metal works in Singapore"
-            >
-              <p className="hero-card-eyebrow">MetalSingapore.sg</p>
-              <p className="hero-card-title">Custom metal works in Singapore</p>
-            </div>
+            <img
+              src="/assets/images/projects/proj-frontier-industrial-mezzanine-2024.jpg"
+              alt="Structural steel mezzanine fabrication at Frontier Industrial Building, Singapore"
+              width={1200}
+              height={900}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+            />
           </div>
         </div>
       </section>
@@ -168,12 +205,25 @@ export default function Home() {
           <div className="service-grid">
             {Object.values(CATEGORIES).map((c) => {
               const svc = services.find((s) => s.slug === c.slug);
+              const card = SERVICE_CARD_IMAGES[c.slug];
               return (
-                <Link key={c.slug} to={`/services/${c.slug}`} className="service-card">
-                  <p className="eyebrow">Service</p>
-                  <h3>{c.title}</h3>
-                  <p>{svc?.lead || c.short}</p>
-                  <span className="service-card__more">Read more →</span>
+                <Link key={c.slug} to={`/services/${c.slug}`} className="service-card service-card--image">
+                  <div className="service-card__media">
+                    <img
+                      src={card.src}
+                      alt={card.alt}
+                      loading="lazy"
+                      decoding="async"
+                      width={800}
+                      height={600}
+                    />
+                  </div>
+                  <div className="service-card__body">
+                    <p className="eyebrow">Service</p>
+                    <h3>{c.title}</h3>
+                    <p>{svc?.lead || c.short}</p>
+                    <span className="service-card__more">Read more →</span>
+                  </div>
                 </Link>
               );
             })}
