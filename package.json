@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "build:static": "python3 build/build_pages.py"
+    "build:static": "python3 build/site.py",
+    "qa": "python3 build/qa_check.py"
   },
   "dependencies": {
     "react": "^18.3.1",

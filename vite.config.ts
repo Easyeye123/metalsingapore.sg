@@ -4,17 +4,17 @@ import path from 'node:path';
 import fs from 'node:fs';
 
 /**
- * Vite configuration for the Ezzogenics.com hub SPA.
+ * Vite configuration for the MetalSingapore.sg microsite SPA.
  *
  * The deployable artefact for cPanel is the pre-rendered static HTML produced
- * by build/build_pages.py (run via `npm run build:static`). The Vite SPA in
- * /src is the maintainable source mirror — every static page has a matching
- * React route reading the same /assets/* content pipeline.
+ * by build/site.py (run via `npm run build:static`). The Vite SPA in /src is
+ * the maintainable source mirror — every static page has a matching React
+ * route reading the same /assets/* content pipeline.
  */
 
 function spaFallback(): Plugin {
   return {
-    name: 'ezzogenics-hub-spa-fallback',
+    name: 'metalsg-spa-fallback',
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
         const url = req.url || '/';

@@ -145,12 +145,15 @@ View::heroClose();
             <input id="p-title" name="title" required maxlength="120">
           </div>
           <div class="form-row">
-            <label for="p-category">Category / access method</label>
+            <label for="p-category">Service category</label>
             <select id="p-category" name="category">
-              <option value="flooring">Flooring</option>
-              <option value="commercial-renovation">Commercial renovation</option>
-              <option value="work-at-height">Work at height</option>
-              <option value="glass-and-metal">Glass &amp; metal</option>
+              <option value="custom-metal-works">Custom metal works</option>
+              <option value="stainless-steel-fabrication">Stainless steel fabrication</option>
+              <option value="metal-gates">Metal gates</option>
+              <option value="metal-railings">Metal railings</option>
+              <option value="fencing-and-grilles">Fencing and grilles</option>
+              <option value="cat-ladders-and-access-metalwork">Cat ladders and access metalwork</option>
+              <option value="outdoor-trellis-and-structural-metalwork">Outdoor trellis and structural metalwork</option>
               <option value="other">Other</option>
             </select>
           </div>
