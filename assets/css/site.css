@@ -66,11 +66,11 @@ ul li, ol li { margin-bottom: 0.35em; }
 
 .container { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
 
-/* Slightly wider gutters on phones so text doesn't hug the viewport edge.
-   Targets ~22-24px of breathing room on common phone widths while
-   leaving desktop proportions unchanged. */
-@media (max-width: 640px) { .container { padding: 0 1.4rem; } }
-@media (max-width: 420px) { .container { padding: 0 1.5rem; } }
+/* Mobile gutters: 10px of breathing room from each viewport edge so menu and
+   text content do not touch the screen borders on phones and small tablets. */
+@media (max-width: 880px) { .container { padding: 0 0.625rem; } }
+@media (max-width: 640px) { .container { padding: 0 0.625rem; } }
+@media (max-width: 420px) { .container { padding: 0 0.625rem; } }
 
 .eyebrow {
   display: inline-block;
@@ -103,10 +103,11 @@ ul li, ol li { margin-bottom: 0.35em; }
 }
 .nav-row {
   display: flex; align-items: center; justify-content: space-between;
-  gap: 1.5rem; padding: 0.85rem 1.25rem;
+  gap: 1.5rem; padding: 0.85rem 1.25rem; position: relative;
 }
-@media (max-width: 640px) { .nav-row { padding: 0.85rem 1.4rem; } }
-@media (max-width: 420px) { .nav-row { padding: 0.85rem 1.5rem; } }
+@media (max-width: 880px) {
+  .nav-row { gap: 0.75rem; padding: 0.75rem 0.625rem; }
+}
 .brand { display: flex; align-items: center; gap: 0.7rem; color: var(--ink); }
 .brand:hover { text-decoration: none; }
 .brand-mark {
@@ -149,7 +150,12 @@ ul li, ol li { margin-bottom: 0.35em; }
 
 .nav-toggle {
   display: none; background: transparent; border: 1px solid var(--line);
-  padding: 0.4rem 0.7rem; border-radius: 6px; cursor: pointer; color: var(--ink);
+  padding: 0.45rem 0.65rem; border-radius: 6px; cursor: pointer; color: var(--ink);
+  font-size: 1.1rem; line-height: 1; min-width: 44px; min-height: 44px;
+  align-items: center; justify-content: center;
+}
+.nav-toggle:hover, .nav-toggle:focus-visible {
+  border-color: var(--accent); color: var(--accent); outline: none;
 }
 .sr-only {
   position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
@@ -162,12 +168,28 @@ ul li, ol li { margin-bottom: 0.35em; }
     position: absolute; left: 0; right: 0; top: 100%;
     flex-direction: column; align-items: stretch; gap: 0;
     background: var(--surface); border-bottom: 1px solid var(--line);
-    padding: 0.5rem 1.4rem; display: none;
+    box-shadow: 0 12px 24px -16px rgba(0,0,0,0.25);
+    padding: 0.25rem 0.625rem 0.5rem; display: none;
+    max-height: calc(100vh - 70px); overflow-y: auto;
   }
   .primary-nav.is-open { display: flex; }
-  .primary-nav a { padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
+  .primary-nav a {
+    padding: 0.85rem 0.5rem; border-bottom: 1px solid var(--line);
+    font-size: 1rem; min-height: 44px; display: flex; align-items: center;
+  }
   .primary-nav a:last-child { border-bottom: none; }
-  .primary-nav .nav-cta { margin: 0.5rem 0; text-align: center; }
+  .primary-nav .nav-cta {
+    margin: 0.6rem 0 0.25rem; text-align: center; justify-content: center;
+    padding: 0.85rem 1rem;
+  }
+}
+
+/* Very small phones (e.g. iPhone SE / 320-360px wide): keep the 10px edge
+   gutter but tighten brand text so nothing wraps awkwardly. */
+@media (max-width: 380px) {
+  .brand-text strong { font-size: 0.98rem; }
+  .brand-text span { font-size: 0.74rem; }
+  .nav-row { gap: 0.5rem; }
 }
 
 /* --- Hero (home) --- */

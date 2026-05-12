@@ -189,7 +189,11 @@ def nav_block(active: str = "") -> str:
       <img src="/assets/images/metalsg-logo.png" alt="" width="34" height="34" />
       <span class="brand-text"><strong>{esc(SITE['shortName'])}</strong>.sg</span>
     </a>
-    <nav class="primary-nav" aria-label="Primary">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="sr-only">Menu</span>
+      <span aria-hidden="true" data-nav-icon>&#9776;</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
       {link('/', 'Home', 'home')}
       {link('/about-us/', 'About', 'about')}
       {link('/services/', 'Services', 'services')}
@@ -197,8 +201,8 @@ def nav_block(active: str = "") -> str:
       {link('/blog/', 'Blog', 'blog')}
       {link('/faq/', 'FAQ', 'faq')}
       {link('/contact-us/', 'Contact', 'contact')}
+      <a class="nav-cta" href="/contact-us/">Get a quote</a>
     </nav>
-    <a class="btn btn-primary nav-cta" href="/contact-us/">Get a quote</a>
   </div>
 </header>
 """
@@ -242,6 +246,32 @@ def footer_block() -> str:
     <p>&copy; {datetime.now().year} {esc(SITE['legalName'])}. Operating as {esc(SITE['name'])}.</p>
   </div>
 </footer>
+<script>
+(function(){{
+  var btn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('primary-nav');
+  if (!btn || !menu) return;
+  var icon = btn.querySelector('[data-nav-icon]');
+  function setOpen(open){{
+    menu.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    if (icon) icon.innerHTML = open ? '&#10005;' : '&#9776;';
+  }}
+  btn.addEventListener('click', function(){{
+    setOpen(!menu.classList.contains('is-open'));
+  }});
+  menu.addEventListener('click', function(e){{
+    if (e.target && e.target.tagName === 'A') setOpen(false);
+  }});
+  document.addEventListener('keydown', function(e){{
+    if (e.key === 'Escape' && menu.classList.contains('is-open')) setOpen(false);
+  }});
+  window.addEventListener('resize', function(){{
+    if (window.innerWidth > 880 && menu.classList.contains('is-open')) setOpen(false);
+  }});
+}})();
+</script>
 </body>
 </html>
 """
