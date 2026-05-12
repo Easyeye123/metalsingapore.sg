@@ -1,10 +1,24 @@
-import { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import { SITE } from '../data/site';
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
+  const { pathname } = useLocation();
+
+  useEffect(() => { setOpen(false); }, [pathname]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); };
+    document.addEventListener('keydown', onKey);
+    document.body.classList.add('nav-open');
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.classList.remove('nav-open');
+    };
+  }, [open]);
 
   return (
     <header className="site-header">
@@ -21,12 +35,13 @@ export default function Nav() {
           className="nav-toggle"
           aria-expanded={open}
           aria-controls="primary-nav"
+          aria-label={open ? 'Close menu' : 'Open menu'}
           onClick={() => setOpen((v) => !v)}
         >
-          <span className="sr-only">Menu</span>
+          <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
           <span aria-hidden>{open ? '✕' : '☰'}</span>
         </button>
-        <nav id="primary-nav" className={`primary-nav${open ? ' is-open' : ''}`}>
+        <nav id="primary-nav" className={`primary-nav${open ? ' is-open' : ''}`} aria-label="Primary">
           <NavLink to="/" end onClick={close}>Home</NavLink>
           <NavLink to="/about-us" onClick={close}>About</NavLink>
           <NavLink to="/services" onClick={close}>Services</NavLink>

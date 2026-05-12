@@ -180,8 +180,13 @@ def head_block(*, title: str, description: str, canonical_path: str,
 
 
 def nav_block(active: str = "") -> str:
-    def link(href: str, label: str, key: str) -> str:
-        cls = ' class="active"' if active == key else ""
+    def link(href: str, label: str, key: str, extra_cls: str = "") -> str:
+        classes = []
+        if extra_cls:
+            classes.append(extra_cls)
+        if active == key:
+            classes.append("active")
+        cls = f' class="{" ".join(classes)}"' if classes else ""
         return f'<a href="{href}"{cls}>{label}</a>'
     return f"""<header class="site-header">
   <div class="container nav-row">
@@ -189,17 +194,47 @@ def nav_block(active: str = "") -> str:
       <img src="/assets/images/metalsg-logo.png" alt="" width="34" height="34" />
       <span class="brand-text"><strong>{esc(SITE['shortName'])}</strong>.sg</span>
     </a>
-    <nav class="primary-nav" aria-label="Primary">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="sr-only">Open menu</span>
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
       {link('/', 'Home', 'home')}
       {link('/about-us/', 'About', 'about')}
       {link('/services/', 'Services', 'services')}
       {link('/projects/', 'Projects', 'projects')}
       {link('/blog/', 'Blog', 'blog')}
       {link('/faq/', 'FAQ', 'faq')}
-      {link('/contact-us/', 'Contact', 'contact')}
+      {link('/contact-us/', 'Get a quote', 'contact', 'nav-cta')}
     </nav>
-    <a class="btn btn-primary nav-cta" href="/contact-us/">Get a quote</a>
   </div>
+  <script>
+  (function(){{
+    var btn = document.querySelector('.site-header .nav-toggle');
+    var nav = document.getElementById('primary-nav');
+    if (!btn || !nav) return;
+    var OPEN = '\\u2715', CLOSED = '\\u2630';
+    function setOpen(open){{
+      nav.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      var sr = btn.querySelector('.sr-only');
+      if (sr) sr.textContent = open ? 'Close menu' : 'Open menu';
+      var icon = btn.querySelector('[aria-hidden]');
+      if (icon) icon.textContent = open ? OPEN : CLOSED;
+      document.body.classList.toggle('nav-open', open);
+    }}
+    btn.addEventListener('click', function(){{
+      setOpen(!nav.classList.contains('is-open'));
+    }});
+    nav.addEventListener('click', function(e){{
+      if (e.target && e.target.tagName === 'A') setOpen(false);
+    }});
+    document.addEventListener('keydown', function(e){{
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) setOpen(false);
+    }});
+  }})();
+  </script>
 </header>
 """
 
