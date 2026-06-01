@@ -1018,3 +1018,298 @@ code { background: var(--surface-2); padding: 0.1rem 0.3rem; border-radius: 4px;
 @media (max-width: 500px) {
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* ─────────────────────────────────────────────
+   SEO Dashboard  /seo-dashboard
+───────────────────────────────────────────── */
+.seo-hero { padding: clamp(2.5rem, 5vw, 4.5rem) 0 clamp(2rem, 4vw, 3.5rem); }
+.seo-hero h1 { margin-top: 0.3rem; }
+
+/* Stats bar */
+.seo-stats-bar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  padding: 1.25rem 0;
+}
+.seo-stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+  align-items: center;
+}
+.seo-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.seo-stat-value {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.seo-stat-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.seo-stat-grades { flex-direction: row; gap: 0.4rem; align-items: center; }
+.seo-grade-mini {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Toolbar */
+.seo-main { padding-top: 2rem; }
+.seo-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-bottom: 1.25rem;
+}
+.seo-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.seo-filter-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-right: 0.25rem;
+}
+.seo-filter-btn {
+  font-size: 0.82rem;
+  padding: 0.3rem 0.75rem;
+  border: 1.5px solid var(--line-2);
+  border-radius: 5px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+.seo-filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.seo-filter-active {
+  border-color: var(--accent) !important;
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+.seo-sort-arrow { font-size: 0.75rem; }
+.seo-result-count {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+/* Card grid */
+.seo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.25rem;
+}
+.seo-empty {
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+/* Site card */
+.seo-card {
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.seo-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 18px -6px rgba(231,106,43,0.18);
+}
+
+.seo-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.seo-card-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.seo-grade-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 6px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.seo-card-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+.seo-card-site-name {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.seo-card-url {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.seo-card-url:hover { color: var(--accent); }
+.seo-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.seo-status-dot-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.seo-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.seo-card-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Score row */
+.seo-card-score-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.seo-overall-score {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+.seo-overall-denom {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-left: 0.1rem;
+}
+.seo-issue-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.seo-chip {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+.seo-chip-critical { background: #fce8e6; color: #a93226; }
+.seo-chip-warning  { background: #fef9e7; color: #9a6e05; }
+.seo-chip-notice   { background: #eaf4fb; color: #1f6fa4; }
+
+/* Expand button */
+.seo-expand-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+.seo-expand-btn:hover { color: var(--accent-hover); }
+
+/* Score breakdown */
+.seo-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+}
+.seo-breakdown-row {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr 2rem;
+  align-items: center;
+  gap: 0.6rem;
+}
+.seo-breakdown-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.seo-score-bar-track {
+  height: 6px;
+  background: var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.seo-score-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+.seo-breakdown-val {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: right;
+}
+.seo-breakdown-footer {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .seo-stats-grid { gap: 0.75rem 1.5rem; }
+  .seo-stat-value { font-size: 1.6rem; }
+  .seo-grid { grid-template-columns: 1fr; }
+  .seo-toolbar { gap: 0.75rem; }
+}

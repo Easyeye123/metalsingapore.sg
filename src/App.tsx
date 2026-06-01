@@ -9,6 +9,7 @@ import BlogHub from './pages/BlogHub';
 import BlogDetail from './pages/BlogDetail';
 import Faq from './pages/Faq';
 import Contact from './pages/Contact';
+import SeoDashboard from './pages/SeoDashboard';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/seo-dashboard" element={<SeoDashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
