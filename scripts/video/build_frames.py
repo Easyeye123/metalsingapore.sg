@@ -141,7 +141,7 @@ P=lambda n: os.path.join(UP,n)
 D=lambda n: os.path.join(DR,n)
 
 segs=[
- ("photo", P("4cf3e56a-IMG_4949.jpeg"),
+ ("photo", P("5503dea9-IMG_4943.jpeg"),
    "Stainless Steel Handrails & Cat-Ladder Access",
    "8-storey data centre  ·  6 Sunview Drive, Singapore", "Project"),
  ("photo", P("2290fa33-IMG_4942.jpeg"),
@@ -165,6 +165,9 @@ segs=[
  ("draw",  D("ladconn.png"),
    "Cat-ladder fixed to existing C-channel & unistrut",
    "SS304 25×50×3mm ladder  ·  435mm clearance  ·  PE-endorsed design", "Engineering Drawing"),
+ ("photo", P("0078b011-IMG_4949.jpeg"),
+   "Completed — safe, certified maintenance access",
+   "Stainless handrails, cat-ladder & fall-arrestor, installed", "Completed"),
  ("photo", P("02072201-IMG_4948.jpeg"),
    "Engineered. Bolted. Certified safe.",
    "By Ezzogenics Pte Ltd  —  metalsingapore.sg  ·  metalglassworksingapore.com", "Ezzogenics"),

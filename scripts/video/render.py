@@ -8,15 +8,16 @@ T = 0.6  # xfade duration
 
 # (file, duration, is_drawing)
 segs = [
- ("s00.png", 4.0, False),
- ("s01.png", 3.3, False),
- ("s02.png", 3.6, False),
- ("s03.png", 4.0, True),
- ("s04.png", 3.3, False),
- ("s05.png", 3.6, False),
- ("s06.png", 4.3, True),
- ("s07.png", 4.0, True),
- ("s08.png", 4.0, False),
+ ("s00.png", 3.6, False),
+ ("s01.png", 3.1, False),
+ ("s02.png", 3.3, False),
+ ("s03.png", 3.6, True),
+ ("s04.png", 3.1, False),
+ ("s05.png", 3.3, False),
+ ("s06.png", 3.8, True),
+ ("s07.png", 3.6, True),
+ ("s08.png", 3.8, False),
+ ("s09.png", 3.9, False),
 ]
 
 inputs = []

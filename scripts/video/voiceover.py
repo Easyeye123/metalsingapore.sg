@@ -5,8 +5,8 @@ WORK="/tmp/vid/vo"; os.makedirs(WORK, exist_ok=True)
 VOICE="en-GB"
 
 # (scene start of crossfade) from render.py offsets
-offs=[0.0,3.4,6.1,9.1,12.5,15.2,18.2,21.9,25.3]
-TOTAL=29.3
+offs=[0.0,3.0,5.5,8.2,11.2,13.7,16.4,19.6,22.6,25.8]
+TOTAL=29.7
 # narration, one line per scene
 lines=[
  "Stainless steel access. Sunview Drive data centre.",
@@ -17,6 +17,7 @@ lines=[
  "The cat ladder, fall arrestor secured.",
  "A self retracting lifeline, on a steel frame.",
  "Fixed to existing structure. No welds.",
+ "Complete. Safe, certified access.",
  "Engineered. Bolted. Certified safe.",
 ]
 # start each line shortly after the scene appears
@@ -59,7 +60,7 @@ fc.append("".join(voxlabels)+f"amix=inputs={len(fitted)}:normalize=0,alimiter=li
 # duck music when voice present
 fc.append("[0:a]volume=0.9[m0]")
 fc.append("[m0][voxA]sidechaincompress=threshold=0.02:ratio=8:attack=10:release=300:makeup=2[duck]")
-fc.append("[duck][voxB]amix=inputs=2:normalize=0,alimiter=limit=0.97,afade=t=out:st=27.8:d=1.5[out]")
+fc.append("[duck][voxB]amix=inputs=2:normalize=0,alimiter=limit=0.97,afade=t=out:st=28.2:d=1.4[out]")
 filt=";".join(fc)
 cmd=["ffmpeg","-y"]+inputs+["-filter_complex",filt,"-map","[out]","-t",str(TOTAL),
      "-c:a","aac","-b:a","192k","/tmp/vid/voiceover_mix.aac"]

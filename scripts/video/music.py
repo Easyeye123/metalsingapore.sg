@@ -3,7 +3,7 @@
 import numpy as np, wave, struct
 
 SR = 44100
-DUR = 29.3
+DUR = 29.7
 BPM = 124.0
 beat = 60.0/BPM
 bar = 4*beat

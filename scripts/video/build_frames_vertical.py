@@ -108,6 +108,7 @@ segs=[
  ("photo",P("234dffd3-IMG_4944.jpeg"),"Challenge 2 — securing the cat-ladder","Access protected by a fall-arrestor system","Fall Protection"),
  ("draw", D("frame_srl.png"),"Overhead anchorage on a 100×50×5 RHS frame","HARU HE-10 SRL · EN360 certified","Drawing"),
  ("draw", D("ladconn.png"),"Cat-ladder fixed to existing C-channel","SS304 25×50×3 ladder · 435mm clearance","Drawing"),
+ ("photo",P("0078b011-IMG_4949.jpeg"),"Completed — certified maintenance access","Handrails, cat-ladder & fall-arrestor, installed","Completed"),
  ("photo",P("02072201-IMG_4948.jpeg"),"Engineered. Bolted. Certified safe.","Ezzogenics Pte Ltd · metalsingapore.sg · metalglassworksingapore.com","Ezzogenics"),
 ]
 for i,s in enumerate(segs):
