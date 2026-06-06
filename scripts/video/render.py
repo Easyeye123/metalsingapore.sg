@@ -4,20 +4,27 @@ import os, subprocess, shlex
 SEG = "/tmp/vid/seg"
 OUTV = "/tmp/vid/video.mp4"
 FPS = 30
-T = 0.6  # xfade duration
+T = 0.5  # xfade duration (matches VO-aligned duration math)
 
-# (file, duration, is_drawing)
+# (file, duration, is_drawing) — durations timed to the ElevenLabs voiceover
 segs = [
- ("s00.png", 3.6, False),
- ("s01.png", 3.1, False),
- ("s02.png", 3.3, False),
- ("s03.png", 3.6, True),
- ("s04.png", 3.1, False),
- ("s05.png", 3.3, False),
- ("s06.png", 3.8, True),
- ("s07.png", 3.6, True),
- ("s08.png", 3.8, False),
- ("s09.png", 3.9, False),
+ ("s00.png", 5.25, False),  # L1 title
+ ("s01.png", 2.35, False),  # L2 containers
+ ("s02.png", 2.35, False),  # L2 b-roll (walkway)
+ ("s03.png", 2.35, False),  # L2 b-roll (install/harness)
+ ("s04.png", 5.06, False),  # L3 no welding
+ ("s05.png", 5.16, True),   # L4 bolted (drawing)
+ ("s06.png", 2.91, False),  # L5 SS304/PE
+ ("s07.png", 2.90, False),  # L5 b-roll (engineer)
+ ("s08.png", 2.91, False),  # L5 b-roll (workshop)
+ ("s09.png", 2.90, False),  # L5 b-roll (workshop 2)
+ ("s10.png", 2.45, False),  # L6 fall-arrestor
+ ("s11.png", 2.45, False),  # L6 b-roll
+ ("s12.png", 5.63, True),   # L7 SRL frame (drawing)
+ ("s13.png", 3.07, True),   # L8 ladder (drawing)
+ ("s14.png", 3.06, False),  # L8 b-roll
+ ("s15.png", 5.93, False),  # L9 completed
+ ("s16.png", 7.07, False),  # L10 closing
 ]
 
 inputs = []

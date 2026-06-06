@@ -50,5 +50,5 @@ def make(W,H,out, logo_w, sizes):
     canvas.save(out); print("outro",os.path.basename(out),(W,H))
 
 # H: sizes (head,serv,web,lbl,addr,con)
-make(1920,1080,"/tmp/vid/outro_h.png", logo_w=430, sizes=(54,28,34,26,32,40))
-make(1080,1920,"/tmp/vid/outro_v.png", logo_w=720, sizes=(56,24,34,26,34,42))
+make(1920,1080,"/tmp/vid/outro_h.png", logo_w=440, sizes=(66,34,44,30,42,52))
+make(1080,1920,"/tmp/vid/outro_v.png", logo_w=780, sizes=(66,32,44,30,46,56))

@@ -141,36 +141,67 @@ P=lambda n: os.path.join(UP,n)
 D=lambda n: os.path.join(DR,n)
 
 segs=[
+ # slot0 L1 title
  ("photo", P("5503dea9-IMG_4943.jpeg"),
    "Stainless Steel Handrails & Cat-Ladder Access",
    "8-storey data centre  ·  6 Sunview Drive, Singapore", "Project"),
+ # slot1 L2 live containers (anchor + b-roll)
  ("photo", P("2290fa33-IMG_4942.jpeg"),
-   "Railings built around live PTU & STS containers",
-   "Fabricated and fitted inside a congested, operational M&E plant", "On Site"),
+   "Railings around live PTU & STS containers",
+   "Fitted inside a congested, operational M&E plant", "On Site"),
+ ("photo", P("3446f837-IMG_4937.jpeg"),
+   "Railings around live PTU & STS containers",
+   "Fitted inside a congested, operational M&E plant", "On Site"),
+ ("photo", P("23bf4178-IMG_4967.png"),
+   "Railings around live PTU & STS containers",
+   "Fabricated and installed by our own team", "Installation"),
+ # slot2 L3 no welding
  ("photo", P("89b08535-IMG_4038.jpeg"),
-   "Challenge 1 — no welding allowed on the container",
+   "The challenge — no welding allowed on the container",
    "Every connection had to be mechanical, not welded", "The Challenge"),
+ # slot3 L4 bolted to channel (draw)
  ("draw",  D("bp2.png"),
-   "Solution: base plates bolted to existing C-channel",
-   "6 nos GR8.8 M16 anchor bolts  ·  240×150 plate + backing plate  ·  SS304 fixings", "Engineering Drawing"),
+   "Base plates bolted to the existing steel channel",
+   "6 nos GR8.8 M16 anchor bolts  ·  240×150 plate + backing plate  ·  SS304", "Engineering Drawing"),
+ # slot4 L5 SS304 / Singapore Standards / PE (anchor + engineer b-roll)
  ("photo", P("92f5a323-IMG_4032.jpeg"),
-   "Handrails in marine-grade stainless steel",
-   "Ø44.45 & Ø48.3mm CHS  ·  PE-endorsed to Eurocode 3", "Fabrication"),
+   "SS304-grade handrails — PE approved",
+   "Engineered to Singapore Standards  ·  load-calculation endorsed", "Fabrication"),
+ ("photo", P("15457fb2-IMG_4936.jpeg"),
+   "SS304-grade handrails — PE approved",
+   "Engineered to Singapore Standards  ·  load-calculation endorsed", "Engineering"),
+ ("photo", P("c1464a96-IMG_4968.png"),
+   "Custom-fabricated in our workshop",
+   "Stainless frames, gratings & curved handrails  ·  SS304", "Fabrication"),
+ ("photo", P("ae4c32b4-IMG_4969.png"),
+   "Custom-fabricated in our workshop",
+   "Jig-welded frames, then fitted on site", "Workshop"),
+ # slot5 L6 fall-arrestor secured (anchor + b-roll)
  ("photo", P("234dffd3-IMG_4944.jpeg"),
-   "Challenge 2 — securing the cat-ladder for safe access",
+   "Securing the cat-ladder for safe access",
    "Climbing access protected by a fall-arrestor system", "Fall Protection"),
+ ("photo", P("4764be1f-IMG_4935.jpeg"),
+   "Securing the cat-ladder for safe access",
+   "Climbing access protected by a fall-arrestor system", "Fall Protection"),
+ # slot6 L7 SRL frame (draw)
  ("draw",  D("frame_srl.png"),
-   "Overhead anchorage on a 100×50×5 RHS support frame",
-   "HARU HE-10 self-retracting lifeline  ·  EN360 certified  ·  with karabiner & anchor", "Engineering Drawing"),
+   "A self-retracting lifeline on a steel support frame",
+   "HARU HE-10 SRL  ·  EN360 certified  ·  100×50×5 RHS frame", "Engineering Drawing"),
+ # slot7 L8 fixed to structure, no welds (draw + b-roll)
  ("draw",  D("ladconn.png"),
-   "Cat-ladder fixed to existing C-channel & unistrut",
-   "SS304 25×50×3mm ladder  ·  435mm clearance  ·  PE-endorsed design", "Engineering Drawing"),
+   "Fixed to the existing structure — no welds",
+   "SS304 25×50×3mm ladder  ·  full strength", "Engineering Drawing"),
+ ("photo", P("b8dcfe20-IMG_4934.jpeg"),
+   "Fixed to the existing structure — no welds",
+   "SS304 25×50×3mm ladder  ·  full strength", "On Site"),
+ # slot8 L9 completed
  ("photo", P("0078b011-IMG_4949.jpeg"),
-   "Completed — safe, certified maintenance access",
+   "The result — safe, PE-certified access",
    "Stainless handrails, cat-ladder & fall-arrestor, installed", "Completed"),
+ # slot9 L10 closing
  ("photo", P("02072201-IMG_4948.jpeg"),
    "Engineered. Bolted. Certified safe.",
-   "By Ezzogenics Pte Ltd  —  metalsingapore.sg  ·  metalglassworksingapore.com", "Ezzogenics"),
+   "By Ezzogenics  —  metalsingapore.sg  ·  metalglassworksingapore.com", "Ezzogenics"),
 ]
 
 for i,s in enumerate(segs):
