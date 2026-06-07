@@ -6,25 +6,25 @@ OUTV = "/tmp/vid/video.mp4"
 FPS = 30
 T = 0.5  # xfade duration (matches VO-aligned duration math)
 
-# (file, duration, is_drawing) — tightened, timed to 1.15x voiceover
+# (file, duration, is_drawing) — timed to Ruzgar voiceover
 segs = [
- ("s00.png", 4.63, False),
- ("s01.png", 2.11, False),
- ("s02.png", 2.11, False),
- ("s03.png", 2.11, False),
- ("s04.png", 4.47, False),
- ("s05.png", 4.55, True),
- ("s06.png", 2.59, False),
- ("s07.png", 2.59, False),
- ("s08.png", 2.59, False),
- ("s09.png", 2.59, False),
- ("s10.png", 2.20, False),
- ("s11.png", 2.19, False),
- ("s12.png", 4.96, True),
- ("s13.png", 2.73, True),
- ("s14.png", 2.73, False),
- ("s15.png", 5.22, False),
- ("s16.png", 6.17, False),
+ ("s00.png", 4.91, False),
+ ("s01.png", 2.18, False),
+ ("s02.png", 2.18, False),
+ ("s03.png", 2.17, False),
+ ("s04.png", 4.41, False),
+ ("s05.png", 4.50, True),
+ ("s06.png", 2.87, False),
+ ("s07.png", 2.87, False),
+ ("s08.png", 2.87, False),
+ ("s09.png", 2.87, False),
+ ("s10.png", 3.09, False),
+ ("s11.png", 3.08, False),
+ ("s12.png", 5.99, True),
+ ("s13.png", 3.48, True),
+ ("s14.png", 3.47, False),
+ ("s15.png", 4.46, False),
+ ("s16.png", 8.73, False),
 ]
 
 inputs = []
