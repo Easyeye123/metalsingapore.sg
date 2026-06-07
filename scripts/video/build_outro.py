@@ -15,13 +15,22 @@ def steel_bg(W,H):
         for x in range(W): px[x,y]=c
     return base
 
-def make(W,H,out, logo_w, sizes):
-    s_head,s_serv,s_web,s_lbl,s_addr,s_con = sizes
+def make(W,H,out,logo_w,sizes,portrait):
+    s_head,s_serv,s_web,s_addr,s_con = sizes
+    maxw=int(W*0.90)
     canvas=steel_bg(W,H); d=ImageDraw.Draw(canvas,"RGBA")
-    def ctext(y,txt,f,fill,gap=0):
-        b=d.textbbox((0,0),txt,font=f); w=b[2]-b[0]
-        d.text(((W-w)//2,y),txt,font=f,fill=fill); return y+(b[3]-b[1])+gap
-    # logo plate (top, centered)
+    def tw(t,f): b=d.textbbox((0,0),t,font=f); return b[2]-b[0]
+    def fit(t,bold,base):  # shrink until it fits maxw
+        s=base
+        while s>12:
+            f=font(bold,s)
+            if tw(t,f)<=maxw: return f
+            s-=2
+        return font(bold,12)
+    def ctext(y,t,bold,base,fill,gap):
+        f=fit(t,bold,base); b=d.textbbox((0,0),t,font=f)
+        d.text(((W-(b[2]-b[0]))//2,y),t,font=f,fill=fill); return y+(b[3]-b[1])+gap
+    # logo plate
     logo=Image.open(LOGO).convert("RGB"); lw=logo_w; lh=int(lw*logo.height/logo.width)
     logo=logo.resize((lw,lh),Image.LANCZOS); pad=int(lw*0.05)
     cw,ch=lw+pad*2,lh+pad*2; cx=(W-cw)//2; cy=int(H*0.055)
@@ -33,22 +42,35 @@ def make(W,H,out, logo_w, sizes):
     mask=Image.new("L",(cw,ch),0); ImageDraw.Draw(mask).rounded_rectangle((0,0,cw,ch),radius=20,fill=255)
     canvas.paste(plate,(cx,cy),mask)
 
-    y=cy+ch+int(H*0.045)
-    y=ctext(y,"WORKS BY EZZOGENICS",font(True,s_head),LIGHT,int(H*0.024))
-    aw=int(W*0.26); d.rounded_rectangle(((W-aw)//2,y,(W+aw)//2,y+6),radius=3,fill=GREEN); y+=int(H*0.035)
-    y=ctext(y,"Metal Fabrication  ·  Glass Works  ·  Handrails  ·  Cat-Ladders  ·  Fall-Arrestor Access",
-            font(True,s_serv),SUBC,int(H*0.03))
+    gap=lambda f:int(H*f)
+    y=cy+ch+gap(0.045)
+    y=ctext(y,"WORKS BY EZZOGENICS",True,s_head,LIGHT,gap(0.024))
+    aw=int(W*(0.40 if portrait else 0.26)); d.rounded_rectangle(((W-aw)//2,y,(W+aw)//2,y+6),radius=3,fill=GREEN); y+=gap(0.030)
+    # services
+    if portrait:
+        y=ctext(y,"Metal Fabrication · Glass Works · Handrails",True,s_serv,SUBC,gap(0.006))
+        y=ctext(y,"Cat-Ladders · Fall-Arrestor Access",True,s_serv,SUBC,gap(0.030))
+    else:
+        y=ctext(y,"Metal Fabrication  ·  Glass Works  ·  Handrails  ·  Cat-Ladders  ·  Fall-Arrestor Access",True,s_serv,SUBC,gap(0.030))
     # websites
-    y=ctext(y,"ezzogenics.com    ·    metalsingapore.sg",font(True,s_web),GREEN,int(H*0.012))
-    y=ctext(y,"metalglassworksingapore.com    ·    ezzo.sg",font(True,s_web),GREEN,int(H*0.045))
+    if portrait:
+        y=ctext(y,"ezzogenics.com  ·  metalsingapore.sg",True,s_web,GREEN,gap(0.008))
+        y=ctext(y,"metalglassworksingapore.com",True,s_web,GREEN,gap(0.008))
+        y=ctext(y,"ezzo.sg",True,s_web,GREEN,gap(0.040))
+    else:
+        y=ctext(y,"ezzogenics.com    ·    metalsingapore.sg",True,s_web,GREEN,gap(0.012))
+        y=ctext(y,"metalglassworksingapore.com    ·    ezzo.sg",True,s_web,GREEN,gap(0.045))
     # address
-    y=ctext(y,"15 Kaki Bukit Road 4, #01-44 Bartley Biz Centre",font(False,s_addr),LIGHT,int(H*0.010))
-    y=ctext(y,"Singapore 417808",font(False,s_addr),LIGHT,int(H*0.040))
+    if portrait:
+        y=ctext(y,"15 Kaki Bukit Road 4, #01-44",False,s_addr,LIGHT,gap(0.008))
+        y=ctext(y,"Bartley Biz Centre, Singapore 417808",False,s_addr,LIGHT,gap(0.040))
+    else:
+        y=ctext(y,"15 Kaki Bukit Road 4, #01-44 Bartley Biz Centre",False,s_addr,LIGHT,gap(0.010))
+        y=ctext(y,"Singapore 417808",False,s_addr,LIGHT,gap(0.040))
     # contacts
-    y=ctext(y,"WhatsApp David  9632 0750",font(True,s_con),WHITEC,int(H*0.012))
-    y=ctext(y,"Office  6968 3098",font(True,s_con),WHITEC,0)
+    y=ctext(y,"WhatsApp David  9632 0750",True,s_con,WHITEC,gap(0.012))
+    y=ctext(y,"Office  6968 3098",True,s_con,WHITEC,0)
     canvas.save(out); print("outro",os.path.basename(out),(W,H))
 
-# H: sizes (head,serv,web,lbl,addr,con)
-make(1920,1080,"/tmp/vid/outro_h.png", logo_w=440, sizes=(66,34,44,30,42,52))
-make(1080,1920,"/tmp/vid/outro_v.png", logo_w=780, sizes=(66,32,44,30,46,56))
+make(1920,1080,"/tmp/vid/outro_h.png", logo_w=440, sizes=(66,34,44,42,52), portrait=False)
+make(1080,1920,"/tmp/vid/outro_v.png", logo_w=780, sizes=(64,34,44,42,54), portrait=True)
