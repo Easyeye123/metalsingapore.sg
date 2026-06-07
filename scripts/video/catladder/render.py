@@ -8,20 +8,20 @@ T = 0.5  # xfade duration (matches VO-aligned duration math)
 
 # (file, duration, is_drawing) — timed to Ruzgar voiceover
 segs = [
- ("s00.png", 4.16, False),
- ("s02.png", 4.16, False),
- ("s01.png", 7.66, False),
- ("s03.png", 7.35, True),
- ("s08.png", 6.76, False),
- ("s04.png", 9.71, False),
- ("s05.png", 6.23, False),
- ("s06.png", 6.23, True),
- ("s07.png", 11.15, False),
- ("s10.png", 3.74, False),
- ("s09.png", 3.44, False),
- ("s11.png", 3.44, False),
- ("s12.png", 3.44, False),
- ("s13.png", 12.11, False),
+ ("s00.png", 3.55, False),
+ ("s02.png", 3.55, False),
+ ("s01.png", 6.47, False),
+ ("s03.png", 6.21, True),
+ ("s08.png", 5.72, False),
+ ("s04.png", 8.18, False),
+ ("s05.png", 5.28, False),
+ ("s06.png", 5.28, True),
+ ("s07.png", 9.38, False),
+ ("s10.png", 3.2, False),
+ ("s09.png", 2.95, False),
+ ("s11.png", 2.95, False),
+ ("s12.png", 2.95, False),
+ ("s13.png", 10.18, False),
 ]
 
 inputs = []
