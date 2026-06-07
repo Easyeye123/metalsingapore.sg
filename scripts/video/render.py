@@ -6,25 +6,25 @@ OUTV = "/tmp/vid/video.mp4"
 FPS = 30
 T = 0.5  # xfade duration (matches VO-aligned duration math)
 
-# (file, duration, is_drawing) — durations timed to the ElevenLabs voiceover
+# (file, duration, is_drawing) — tightened, timed to 1.15x voiceover
 segs = [
- ("s00.png", 5.25, False),  # L1 title
- ("s01.png", 2.35, False),  # L2 containers
- ("s02.png", 2.35, False),  # L2 b-roll (walkway)
- ("s03.png", 2.35, False),  # L2 b-roll (install/harness)
- ("s04.png", 5.06, False),  # L3 no welding
- ("s05.png", 5.16, True),   # L4 bolted (drawing)
- ("s06.png", 2.91, False),  # L5 SS304/PE
- ("s07.png", 2.90, False),  # L5 b-roll (engineer)
- ("s08.png", 2.91, False),  # L5 b-roll (workshop)
- ("s09.png", 2.90, False),  # L5 b-roll (workshop 2)
- ("s10.png", 2.45, False),  # L6 fall-arrestor
- ("s11.png", 2.45, False),  # L6 b-roll
- ("s12.png", 5.63, True),   # L7 SRL frame (drawing)
- ("s13.png", 3.07, True),   # L8 ladder (drawing)
- ("s14.png", 3.06, False),  # L8 b-roll
- ("s15.png", 5.93, False),  # L9 completed
- ("s16.png", 7.07, False),  # L10 closing
+ ("s00.png", 4.63, False),
+ ("s01.png", 2.11, False),
+ ("s02.png", 2.11, False),
+ ("s03.png", 2.11, False),
+ ("s04.png", 4.47, False),
+ ("s05.png", 4.55, True),
+ ("s06.png", 2.59, False),
+ ("s07.png", 2.59, False),
+ ("s08.png", 2.59, False),
+ ("s09.png", 2.59, False),
+ ("s10.png", 2.20, False),
+ ("s11.png", 2.19, False),
+ ("s12.png", 4.96, True),
+ ("s13.png", 2.73, True),
+ ("s14.png", 2.73, False),
+ ("s15.png", 5.22, False),
+ ("s16.png", 6.17, False),
 ]
 
 inputs = []
