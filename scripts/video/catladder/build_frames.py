@@ -153,7 +153,7 @@ segs=[
  ("photo","09_roof_top_landing.jpeg","Top landing & roof access","Cage carried through to the roof","Roof Access"),
  ("photo","14_base_anticlimb_guard.jpeg","Lockable anti-climb gate at the base","Access kept secure","Security"),
  ("photo","10b_completed_hero.jpeg","Completed — dual 18-metre vertical access","Two cages  ·  two mid-stage platforms","Completed"),
- ("photo","11_completed_hero_port.jpeg","Safe, PE-certified roof access","Engineered to Singapore Standards","Completed"),
+ ("photo","11_completed_hero_port.jpeg","Safe, PE-certified roof access","Buroh Street warehouse  ·  Singapore","Completed"),
  ("photo","13_completed_fullrun.jpeg","Engineered. Anchored. Safe.","By Ezzogenics  —  metalsingapore.sg  ·  metalglassworksingapore.com","Ezzogenics"),
 ]
 

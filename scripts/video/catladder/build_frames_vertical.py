@@ -112,7 +112,7 @@ segs=[
  ("photo","09_roof_top_landing.jpeg","Top landing & roof access","Cage to the roof","Roof Access"),
  ("photo","14_base_anticlimb_guard.jpeg","Lockable gate at the base","Access kept secure","Security"),
  ("photo","10b_completed_hero.jpeg","Dual 18 m vertical access","Two cages · two platforms","Completed"),
- ("photo","11_completed_hero_port.jpeg","Safe, PE-certified access","To Singapore Standards","Completed"),
+ ("photo","11_completed_hero_port.jpeg","Safe, PE-certified access","Buroh Street warehouse · Singapore","Completed"),
  ("photo","13_completed_fullrun.jpeg","Engineered. Anchored. Safe.","Ezzogenics · metalsingapore.sg","Ezzogenics"),
 ]
 for i,s in enumerate(segs):
